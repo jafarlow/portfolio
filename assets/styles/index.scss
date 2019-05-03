@@ -5,6 +5,22 @@ body, html {
     height: 100%;
 }
 
+main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 6.5rem;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -34,4 +50,15 @@ body, html {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
 }
