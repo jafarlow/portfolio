@@ -60,6 +60,26 @@ h3 {
   margin: 1rem auto;
 }
 
+.projects {
+  display: flex;
+  align-items: center;
+}
+
+.project-title {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+#tic-tac-toe {
+  background-image: url("public/tic-tac-toe.png");
+  background-size: cover;
+}
+
+// #tic-tac-toe:hover {
+//   background
+// }
+
 @media only screen and (max-width: 768px) {
   main {
     width: 100%;
