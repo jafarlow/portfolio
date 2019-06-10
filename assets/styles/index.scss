@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
-
+$purple: #522D80;
+$orange: #F66733;
 
 body, html {
     height: 100%;
@@ -16,6 +17,7 @@ h1 {
 }
 
 h3 {
+  color: $orange;
   text-align: center;
   font-weight: bold;
   font-family: "Ubuntu", sans-serif;
@@ -55,7 +57,7 @@ h3 {
 .profile-img {
   display: block;
   width: 350px;
-  border: 3px solid #000;
+  border: 3px solid $purple;
   border-radius: 50px;
   margin: 1rem auto;
 }
@@ -70,6 +72,21 @@ h3 {
 
 .tic-tac-toe {
   background-image: url("public/tic-tac-toe.png");
+  background-size: cover;
+}
+
+.collection-builder {
+  background-image: url("public/collection-builder.png");
+  background-size: cover;
+}
+
+.would-you-rather {
+  background-image: url("public/would-you-rather.png");
+  background-size: cover;
+}
+
+.readers-wishlist {
+  background-image: url("public/readers-wishlist.png");
   background-size: cover;
 }
 
@@ -151,6 +168,10 @@ h3 {
 .info-back {
   height: 250px;
   width: 250px;
+}
+
+.projects {
+  border: 3px solid $purple;
 }
 
 // #tic-tac-toe:hover {
