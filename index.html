@@ -7,6 +7,8 @@
 
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Ubuntu" rel="stylesheet">
+      <!-- in your header -->
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
@@ -23,62 +25,79 @@
         <section>
           <h3>About Me</h3>
           <img src="public/jacob.jpg" alt="Jacob photo" class="profile-img">
-          <p>I am a software developer with a background in IT resource management. I've been looking for an opportunity to switch from hardware to software for a while and have been crafting skills on full-stack web development. I've held a variety of positions over the years, all of which have shaped me into someone who is perpetually curious and always seeking to learn and grow.</p>
+          <p>I am a software engineer with a background in IT resource management. I've been looking for an opportunity to switch from hardware to software for a while and have been crafting skills on full-stack web development. I've held a variety of positions over the years, all of which have shaped me into someone who is perpetually curious and always seeking to learn and grow.</p>
         </section>
 
         <section>
           <h3>Skills</h3>
-          <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>Rails</li>
-            <li>Ruby</li>
-          </ul>
+            <div class="icons-wrapper">
+              <i class="icon-img devicon-bootstrap-plain-wordmark colored"></i>
+              <i class="icon-img devicon-css3-plain-wordmark colored"></i>
+              <i class="icon-img devicon-express-original-wordmark colored"></i>
+              <i class="icon-img devicon-git-plain-wordmark colored"></i>
+              <i class="icon-img devicon-github-plain-wordmark colored"></i>
+              <i class="icon-img devicon-heroku-original-wordmark colored"></i>
+              <i class="icon-img devicon-html5-plain-wordmark colored"></i>
+              <i class="icon-img devicon-javascript-plain colored"></i>
+              <i class="icon-img devicon-jquery-plain-wordmark colored"></i>
+              <i class="icon-img devicon-mongodb-plain-wordmark colored"></i>
+              <i class="icon-img devicon-nodejs-plain-wordmark colored"></i>
+              <i class="icon-img devicon-rails-plain-wordmark colored"></i>
+              <i class="icon-img devicon-react-original-wordmark colored"></i>
+              <i class="icon-img devicon-ruby-plain-wordmark colored"></i>
+            </div>
         </section>
 
         <section>
           <h3>Projects</h3>
-          <div class="readers-wishlist projects effect from_left_and_right"><a href="https://jafarlow.github.io/readers-wishlist-front-end/#/" target="_blank">
-            <div class="info">
-              <div class="info-back">
-                <h3>Reader's Wishlist</h3>
-                <p>A book suggester for the indecisive reader</p>
+          <div class="project-overview">
+            <div class="readers-wishlist projects effect from_left_and_right"><a href="https://jafarlow.github.io/readers-wishlist-front-end/#/" target="_blank">
+              <div class="info">
+                <div class="info-back">
+                  <h3>Reader's Wishlist</h3>
+                  <p>A book suggester for the indecisive reader</p>
+                </div>
               </div>
+            </a>
+              <a href="https://github.com/jafarlow/readers-wishlist-front-end">(front-end repo)</a>
+              <a href="https://github.com/jafarlow/readers-wishlist-back-end">(back-end repo)</a>
             </div>
-          </a>
-          </div>
 
-          <div class="would-you-rather projects effect from_left_and_right"><a href="https://the-full-stack-pancakes.github.io/survey-front-end/" target="_blank">
-            <div class="info">
-              <div class="info-back">
-                <h3>Would You Rather...</h3>
-                <p>A simple survey pitting two options against each other. Cast your vote!</p>
+            <div class="would-you-rather projects effect from_left_and_right"><a href="https://the-full-stack-pancakes.github.io/survey-front-end/" target="_blank">
+              <div class="info">
+                <div class="info-back">
+                  <h3>Would You Rather...</h3>
+                  <p>A simple survey pitting two options against each other. Cast your vote!</p>
+                </div>
               </div>
+            </a>
+              <a href="https://github.com/the-full-stack-pancakes/survey-front-end">(front-end repo)</a>
+              <a href="https://github.com/the-full-stack-pancakes/survey-back-end">(back-end repo)</a>
             </div>
-          </a>
-          </div>
 
-          <div class="collection-builder projects effect from_left_and_right"><a href="https://jafarlow.github.io/album-library-front-end/" target="_blank">
-            <div class="info">
-              <div class="info-back">
-                <h3>Collection Builder</h3>
-                <p>A single-page application for cataloging musical records.</p>
+            <div class="collection-builder projects effect from_left_and_right"><a href="https://jafarlow.github.io/album-library-front-end/" target="_blank">
+              <div class="info">
+                <div class="info-back">
+                  <h3>Collection Builder</h3>
+                  <p>A single-page application for cataloging musical records.</p>
+                </div>
               </div>
+            </a>
+              <a href="https://github.com/jafarlow/album-library-front-end">(front-end repo)</a>
+              <a href="https://github.com/jafarlow/album-library-back-end">(back-end repo)</a>
             </div>
-          </a>
-          </div>
 
-          <div class="tic-tac-toe projects effect from_left_and_right"><a href="https://jafarlow.github.io/tic-tac-toe/" target="_blank">
-            <div class="info">
-              <div class="info-back">
-                <h3>Tic-Tac-Toe</h3>
-                <p>A time-wasting classic!</p>
+            <div class="tic-tac-toe projects effect from_left_and_right"><a href="https://jafarlow.github.io/tic-tac-toe/" target="_blank">
+              <div class="info">
+                <div class="info-back">
+                  <h3>Tic-Tac-Toe</h3>
+                  <p>A time-wasting classic!</p>
+                </div>
               </div>
+            </a>
+              <a href="https://github.com/jafarlow/tic-tac-toe">(repo)</a>
             </div>
-          </a>
           </div>
-          <a href="https://github.com/jafarlow/tic-tac-toe">(repo)</a>
         </section>
 
         <section>
