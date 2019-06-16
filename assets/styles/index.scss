@@ -17,12 +17,9 @@ h1 {
 }
 
 h3 {
-  color: $orange;
   text-align: center;
   font-weight: bold;
   font-family: "Ubuntu", sans-serif;
-  text-decoration: underline;
-  text-decoration-color: $purple;
   margin-top: 1rem;
 }
 
@@ -174,6 +171,11 @@ footer {
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
+
+.projects.effect a:hover {
+  text-decoration: none;
+}
+
 .projects.effect a:hover .info {
   opacity: 1;
 }
@@ -211,6 +213,12 @@ footer {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
+}
+
+.section-head {
+  color: $orange;
+  text-decoration: underline;
+  text-decoration-color: $purple;
 }
 
 .info-back {
