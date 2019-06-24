@@ -31,6 +31,14 @@ footer {
   border-top: 0.2rem solid $orange;
   background-color: $purple;
   height: 6rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 .about-header {
@@ -47,6 +55,19 @@ footer {
 .contact-email {
   color: $purple;
   font-weight: bold;
+}
+
+.footer-icon {
+  margin: 0 0 0 1rem;
+  color: #fff;
+}
+
+.footer-icon:hover {
+  color: $orange;
+}
+
+.footer-icon i {
+  font-size: 1.5rem;
 }
 
 .icons-wrapper {
