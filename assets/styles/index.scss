@@ -35,10 +35,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 footer p {
   margin: 0;
+}
+
+section {
+  margin: 1rem 0;
 }
 
 .about-header {
@@ -58,7 +63,7 @@ footer p {
 }
 
 .footer-icon {
-  margin: 0 0 0 1rem;
+  margin: 0 1rem 0 1rem;
   color: #fff;
 }
 
