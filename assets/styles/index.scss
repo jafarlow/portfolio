@@ -23,7 +23,7 @@ h3 {
   margin-top: 1rem;
 }
 
-a {
+.link {
   text-decoration: underline;
 }
 
@@ -90,6 +90,7 @@ section {
 }
 
 .about-header {
+  font-size: 1.25rem;
   font-style: italic;
   font-weight: bold;
   margin-bottom: 0.1rem;
@@ -136,7 +137,7 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/cefalu.jpg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 60%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -275,7 +276,7 @@ section {
   margin-top: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
   main, .profile-img {
     width: 100%;
   }
