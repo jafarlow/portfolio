@@ -23,6 +23,10 @@ h3 {
   margin-top: 1rem;
 }
 
+a {
+  text-decoration: underline;
+}
+
 p {
   font-family: "Ubuntu", sans-serif;
 
@@ -250,35 +254,6 @@ section {
 }
 .projects.effect a:hover p {
   visibility: visible;
-}
-
-.projects.effect.from_left_and_right .info h3 {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-.projects.effect.from_left_and_right .info p {
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.projects.effect.from_left_and_right a:hover h3 {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
-.projects.effect.from_left_and_right a:hover p {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
 }
 
 .section-head {
