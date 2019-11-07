@@ -2,11 +2,22 @@
 $purple: #522D80;
 $orange: #F66733;
 
+@supports(--css: variables) {
+
+  [data-theme="dark"] {
+    body, html {
+      background-color: $purple;
+    }
+  }
+}
+
 body, html {
-    height: 100%;
+    height: 100vh;
+    // background-color: #222;
 }
 
 main {
+  // width: 100vw;
   width: 56.25rem;
   margin: 0 auto;
 }
