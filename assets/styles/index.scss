@@ -90,10 +90,23 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
-}
 
-footer p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
+
+  .footer-icon {
+    margin: 0 1rem 0 1rem;
+    color: #fff;
+
+    &:hover {
+      color: $orange;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 section {
@@ -111,23 +124,15 @@ section {
 
 .contact {
   text-align: center;
-}
-.contact-email {
-  color: $purple;
-  font-weight: bold;
-}
 
-.footer-icon {
-  margin: 0 1rem 0 1rem;
-  color: #fff;
-}
+  &-email {
+    color: $purple;
+    font-weight: bold;
+  }
 
-.footer-icon:hover {
-  color: $orange;
-}
-
-.footer-icon i {
-  font-size: 1.5rem;
+  &-text {
+    margin-top: 1rem;
+  }
 }
 
 .icons-wrapper {
@@ -135,11 +140,11 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
-}
 
-.icon-img {
-  font-size: 5rem;
-  margin: 1.5rem;
+  .icon-img {
+    font-size: 5rem;
+    margin: 1.5rem;
+  }
 }
 
 /* The hero image */
@@ -181,91 +186,92 @@ section {
   margin: 2rem auto;
 }
 
-.projects {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 21.875rem;
-  height: 21.875rem;
-  border: 0.25rem solid $purple;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
 .project-overview {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 3rem;
-}
 
-.tic-tac-toe {
-  background-image: url("public/tic-tac-toe.png");
-  background-size: cover;
-}
+  .projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 21.875rem;
+    height: 21.875rem;
+    border: 0.25rem solid $purple;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-size: cover;
 
-.collection-builder {
-  background-image: url("public/collection-builder.png");
-  background-size: cover;
-}
+    &.effect .info {
+      background-color: #333333;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      pointer-events: none;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
 
-.would-you-rather {
-  background-image: url("public/would-you-rather.png");
-  background-size: cover;
-}
+      h3 {
+        visibility: hidden;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 0.125rem;
+        font-size: 1.5rem;
+        margin: 0 1.875rem;
+        text-shadow: 0 0 0.0625rem white, 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+      }
 
-.readers-wishlist {
-  background-image: url("public/readers-wishlist.png");
-  background-size: cover;
-}
+      p {
+        visibility: hidden;
+        color: #bbb;
+        padding: 0.625rem 0.3125rem;
+        font-style: italic;
+        margin: 0 1.875rem;
+        font-size: 1rem;
+        border-top: 0.0625rem solid rgba(255, 255, 255, 0.5);
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+      }
+    }
 
-.projects.effect .info {
-  background: #333333;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-.projects.effect .info h3 {
-  visibility: hidden;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  letter-spacing: 0.125rem;
-  font-size: 1.5rem;
-  margin: 0 1.875rem;
-  text-shadow: 0 0 0.0625rem white, 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-.projects.effect .info p {
-  visibility: hidden;
-  color: #bbb;
-  padding: 0.625rem 0.3125rem;
-  font-style: italic;
-  margin: 0 1.875rem;
-  font-size: 1rem;
-  border-top: 0.0625rem solid rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
+    &.effect a:hover {
+      text-decoration: none;
 
-.projects.effect a:hover {
-  text-decoration: none;
-}
+      .info {
+        opacity: 1;
+      }
 
-.projects.effect a:hover .info {
-  opacity: 1;
-}
-.projects.effect a:hover h3 {
-  visibility: visible;
-}
-.projects.effect a:hover p {
-  visibility: visible;
+      h3 {
+        visibility: visible;
+      }
+
+      p {
+        visibility: visible;
+      }
+    }
+  }
+
+  .tic-tac-toe {
+    background-image: url("public/tic-tac-toe.png");
+  }
+
+  .collection-builder {
+    background-image: url("public/collection-builder.png");
+  }
+
+  .would-you-rather {
+    background-image: url("public/would-you-rather.png");
+  }
+
+  .readers-wishlist {
+    background-image: url("public/readers-wishlist.png");
+  }
 }
 
 .section-head {
@@ -281,10 +287,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.contact-text {
-  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 830px) {
