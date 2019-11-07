@@ -1,19 +1,23 @@
 @import '~bootstrap/scss/bootstrap';
 $purple: #522D80;
 $orange: #F66733;
+$light-gray: #d3d3d3;
+$white-gray: #f3f3f3;
+$almost-black: #16161d;
 
-@supports(--css: variables) {
-
-  [data-theme="dark"] {
-    body, html {
-      background-color: $purple;
-    }
-  }
-}
+// NOTE: Hiding the switch until I can get it sorted
+// @supports(--css: variables) {
+//
+//   [data-theme="dark"] {
+//     body, html {
+//       background-color: $purple;
+//     }
+//   }
+// }
 
 body, html {
     height: 100vh;
-    // background-color: #222;
+    background-color: $white-gray;
 }
 
 main {
@@ -25,6 +29,7 @@ main {
 h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 6.5rem;
+  color: $white-gray;
 }
 
 h3 {
@@ -85,7 +90,7 @@ footer {
   border-top: 0.2rem solid $orange;
   background-color: $purple;
   height: 10rem;
-  color: #fff;
+  color: $white-gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +102,7 @@ footer {
 
   .footer-icon {
     margin: 0 1rem 0 1rem;
-    color: #fff;
+    color: $white-gray;
 
     &:hover {
       color: $orange;
@@ -169,13 +174,17 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: $white-gray;
   font-weight: bold;
   text-shadow:
-    -0.0625rem -0.0625rem 0 #000,
-    0.0625rem -0.0625rem 0 #000,
-    -0.0625rem 0.0625rem 0 #000,
-    0.0625rem 0.0625rem 0 #000;
+    -0.0625rem -0.0625rem 0 $almost-black,
+    0.0625rem -0.0625rem 0 $almost-black,
+    -0.0625rem 0.0625rem 0 $almost-black,
+    0.0625rem 0.0625rem 0 $almost-black;
+
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 .profile-img {
@@ -247,11 +256,7 @@ section {
         opacity: 1;
       }
 
-      h3 {
-        visibility: visible;
-      }
-
-      p {
+      h3, p {
         visibility: visible;
       }
     }
