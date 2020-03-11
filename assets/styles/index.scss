@@ -4,6 +4,26 @@ $orange: #F66733;
 $light-gray: #d3d3d3;
 $white-gray: #f3f3f3;
 $almost-black: #16161d;
+$atom: #67595D;
+$bootstrap: #59407f;
+$css3: #3d8fc6;
+$express: #444;
+$git: #f34f29;
+$github: #181616;
+$grunt: #fcaa1a;
+$heroku: #6762a6;
+$html5: #e54d26;
+$javascript: #f0db4f;
+$jquery: #0769ad;
+$mongodb: #4faa41;
+$node: #83cd29;
+$rails: #a62c46;
+$react: #61dafb;
+$ruby: #d91404;
+$sass: #cc6699;
+$slack: #2d333a;
+$trello: #23719f;
+$ubuntu: #dd4814;
 
 // NOTE: Hiding the switch until I can get it sorted
 // @supports(--css: variables) {
@@ -123,8 +143,8 @@ section {
   font-style: italic;
   margin-bottom: 0.1rem;
   text-align: left;
-  text-decoration: underline $purple;
-  color: $orange;
+  text-decoration: underline $orange;
+  color: $purple;
 }
 
 .contact {
@@ -149,6 +169,11 @@ section {
   .icon-img {
     font-size: 5rem;
     margin: 1.5rem;
+    padding-bottom: 0.5rem;
+
+    &:nth-of-type(n) {
+      border-bottom: 0.145rem solid;
+    }
   }
 }
 
@@ -165,6 +190,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  border-bottom: 0.1875rem solid $orange;
 }
 
 /* Place text in the middle of the image */
@@ -280,9 +307,9 @@ section {
 }
 
 .section-head {
-  color: $orange;
+  color: $purple;
   text-decoration: underline;
-  text-decoration-color: $purple;
+  text-decoration-color: $orange;
   margin-top: 4rem;
 }
 
