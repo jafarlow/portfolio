@@ -30,10 +30,12 @@ h2, h3 {
 
 .link {
   text-decoration: underline;
+  font-size: 1.125rem;
 }
 
 p {
   font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
 
   // Hyphenation set below with necessary prefixes and fallbacks
   // Hyphens turned on
@@ -186,7 +188,7 @@ section {
     0.0625rem 0.0625rem 0 $almost-black;
 
   p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -244,7 +246,6 @@ section {
         padding: 0.625rem 0.3125rem;
         font-style: italic;
         margin: 0 1.875rem;
-        font-size: 1rem;
         border-top: 0.0625rem solid rgba(255, 255, 255, 0.5);
         -webkit-transition: all 0.35s ease-in-out;
         -moz-transition: all 0.35s ease-in-out;
