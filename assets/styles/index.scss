@@ -217,6 +217,12 @@ section {
     margin-bottom: 3rem;
     background-size: cover;
 
+    .repo-container {
+      width: 93%;
+      display: flex;
+      justify-content: space-around;
+    }
+
     &.effect .info {
       background-color: #333333;
       background-color: rgba(0, 0, 0, 0.6);
