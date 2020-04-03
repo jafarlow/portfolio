@@ -4,6 +4,7 @@ $orange: #F66733;
 $light-gray: #d3d3d3;
 $white-gray: #f3f3f3;
 $almost-black: #16161d;
+$link-blue: #004fff;
 
 body, html {
   height: 100vh;
@@ -31,6 +32,11 @@ h2, h3 {
 .link {
   text-decoration: underline;
   font-size: 1.125rem;
+  color: $link-blue;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 p {
@@ -89,6 +95,7 @@ footer {
 
   p {
     margin: 0;
+    font-weight: bold;
   }
 
   .footer-icon {
@@ -112,7 +119,7 @@ section {
 .about-header {
   font-size: 1.25rem;
   font-style: italic;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.25rem;
   margin-left: 1rem;
   text-align: left;
   text-decoration: underline $orange;
