@@ -6,6 +6,7 @@ $white-gray: #f3f3f3;
 $almost-black: #16161d;
 $link-blue: #004fff;
 $ember: #dd3f24;
+$grunt: #493310;
 
 body, html {
   height: 100vh;
@@ -152,11 +153,19 @@ section {
   justify-content: center;
   margin-top: 2rem;
 
-  #ember {
+  svg {
     width: 5rem;
     margin: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #ember {
     fill: $ember;
     border-bottom: $ember 0.145rem solid;
+  }
+
+  #grunt {
+    border-bottom: $grunt 0.145rem solid;
   }
 
   .icon-img {
