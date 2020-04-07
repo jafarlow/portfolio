@@ -7,6 +7,7 @@ $almost-black: #16161d;
 $link-blue: #004fff;
 $ember: #dd3f24;
 $grunt: #493310;
+$mongodb: #4faa41;
 
 body, html {
   height: 100vh;
@@ -166,6 +167,10 @@ section {
 
   #grunt {
     border-bottom: $grunt 0.145rem solid;
+  }
+
+  #mongodb {
+    border-bottom: $mongodb 0.145rem solid;
   }
 
   .icon-img {
