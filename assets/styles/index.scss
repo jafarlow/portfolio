@@ -5,6 +5,7 @@ $light-gray: #d3d3d3;
 $white-gray: #f3f3f3;
 $almost-black: #16161d;
 $link-blue: #004fff;
+$link-hover: #0056b3;
 
 // Icon colors
 $atom: #67595D;
@@ -61,6 +62,16 @@ h2, h3 {
 
   &:hover {
     text-decoration: none;
+  }
+
+  svg {
+    width: 1.125rem;
+    fill: $link-blue;
+    padding-bottom: 0.25rem;
+
+    &:hover {
+      fill: $link-hover;
+    }
   }
 }
 
@@ -127,12 +138,13 @@ footer {
     margin: 0 1rem 0 1rem;
     color: $white-gray;
 
-    &:hover {
-      color: $orange;
-    }
+    svg {
+      width: 2rem;
+      fill: $white-gray;
 
-    i {
-      font-size: 1.5rem;
+      &:hover {
+        fill: $orange;
+      }
     }
   }
 }
