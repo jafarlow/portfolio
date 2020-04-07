@@ -5,6 +5,7 @@ $light-gray: #d3d3d3;
 $white-gray: #f3f3f3;
 $almost-black: #16161d;
 $link-blue: #004fff;
+$ember: #dd3f24;
 
 body, html {
   height: 100vh;
@@ -150,6 +151,13 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
+
+  #ember {
+    width: 5rem;
+    margin: 1.5rem;
+    fill: $ember;
+    border-bottom: $ember 0.145rem solid;
+  }
 
   .icon-img {
     font-size: 5rem;
