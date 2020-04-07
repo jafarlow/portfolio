@@ -5,7 +5,15 @@ $light-gray: #d3d3d3;
 $white-gray: #f3f3f3;
 $almost-black: #16161d;
 $link-blue: #004fff;
+
+// Icon colors
+$atom: #67595D;
+$bootstrap: #5B4282;
+$css: #1572B6;
 $ember: #dd3f24;
+$express: #333333;
+$git: #F34F29;
+$github: #24292e;
 $grunt: #493310;
 $mongodb: #4faa41;
 
@@ -158,19 +166,46 @@ section {
     width: 5rem;
     margin: 1.5rem;
     padding-bottom: 0.5rem;
+    border-bottom: 0.145rem solid;
+  }
+
+  #atom {
+    border-color: $atom;
+
+    #atom-text {
+      stroke: $atom;
+      stroke-width: 1;
+    }
+  }
+
+  #bootstrap {
+    border-color: $bootstrap;
   }
 
   #ember {
-    fill: $ember;
-    border-bottom: $ember 0.145rem solid;
+    border-color: $ember;
+  }
+
+  #express {
+    fill: $express;
+    border-color: $express;
+  }
+
+  #git {
+    border-color: $git;
+  }
+
+  #github {
+    fill: $github;
+    border-color: $github;
   }
 
   #grunt {
-    border-bottom: $grunt 0.145rem solid;
+    border-color: $grunt;
   }
 
   #mongodb {
-    border-bottom: $mongodb 0.145rem solid;
+    border-color: $mongodb;
   }
 
   .icon-img {
