@@ -15,7 +15,21 @@ $express: #333333;
 $git: #F34F29;
 $github: #24292e;
 $grunt: #493310;
+$handlebars: #351704;
+$heroku: #6762A6;
+$html: #E44D26;
+$javascript: #F0DB4F;
+$jquery: #0868AC;
 $mongodb: #4faa41;
+$node: #83CD29;
+$npm: #cb3837;
+$rails: #A62C46;
+$react: #61DAFB;
+$ruby: #D91404;
+$sass: #CB6699;
+$slack: #2d333a;
+$trello: #23719F;
+$ubuntu-os: #DD4814;
 
 body, html {
   height: 100vh;
@@ -204,8 +218,67 @@ section {
     border-color: $grunt;
   }
 
+  #handlebars {
+    fill: $handlebars;
+    border-color: $handlebars;
+  }
+
+  #heroku {
+    border-color: $heroku;
+  }
+
+  #html5 {
+    border-color: $html;
+  }
+
+  #javascript {
+    border-color: $javascript;
+  }
+
+  #jquery {
+    border-color: $jquery;
+  }
+
   #mongodb {
     border-color: $mongodb;
+  }
+
+  #node {
+    border-color: $node;
+  }
+
+  #npm {
+    border-color: $npm;
+  }
+
+  #rails {
+    fill: $rails;
+    border-color: $rails;
+  }
+
+  #react {
+    fill: $react;
+    border-color: $react;
+  }
+
+  #ruby {
+    border-color: $ruby;
+  }
+
+  #sass {
+    border-color: $sass;
+  }
+
+  #slack {
+    border-color: $slack;
+  }
+
+  #trello {
+    border-color: $trello;
+  }
+
+  #ubuntu-os {
+    border-color: $ubuntu-os;
   }
 
   .icon-img {
