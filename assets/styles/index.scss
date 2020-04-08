@@ -156,6 +156,16 @@ footer {
     font-size: 1rem;
     margin-top: 0.5rem;
   }
+
+  #devicon {
+    color: $white-gray;
+    text-decoration: underline;
+
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
 }
 
 section {
@@ -346,6 +356,11 @@ section {
   border: 0.1875rem solid $purple;
   border-radius: 3.125rem;
   margin: 2rem auto;
+}
+
+.project-paragraph {
+  text-align: center;
+  margin: 0 1rem;
 }
 
 .project-overview {
