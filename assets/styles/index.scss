@@ -292,16 +292,6 @@ section {
   #ubuntu-os {
     border-color: $ubuntu-os;
   }
-
-  .icon-img {
-    font-size: 5rem;
-    margin: 1.5rem;
-    padding-bottom: 0.5rem;
-
-    &:nth-of-type(n) {
-      border-bottom: 0.145rem solid;
-    }
-  }
 }
 
 /* The hero image */
@@ -462,7 +452,7 @@ section {
     font-size: 4rem;
   }
 
-  .icons-wrapper .icon-img {
+  .icons-wrapper svg {
     font-size: 4rem;
     margin: 1.25rem;
   }
