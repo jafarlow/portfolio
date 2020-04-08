@@ -124,28 +124,37 @@ footer {
   background-color: $purple;
   height: 10rem;
   color: $white-gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
 
-  p {
-    margin: 0;
-    font-weight: bold;
-  }
+  .footer-section {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .footer-icon {
-    margin: 0 1rem 0 1rem;
-    color: $white-gray;
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
 
-    svg {
-      width: 2rem;
-      fill: $white-gray;
+    .footer-icon {
+      margin: 0 1rem 0 1rem;
+      color: $white-gray;
 
-      &:hover {
-        fill: $orange;
+      svg {
+        width: 2rem;
+        fill: $white-gray;
+
+        &:hover {
+          fill: $orange;
+        }
       }
     }
+  }
+
+  #credit {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
