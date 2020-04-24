@@ -32,6 +32,12 @@ $slack: #2d333a;
 $trello: #23719F;
 $ubuntu-os: #DD4814;
 
+@mixin transition() {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
 body, html {
   height: 100vh;
   background-color: $white-gray;
@@ -318,27 +324,24 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 21.875rem;
-    height: 21.875rem;
+    width: 16.40625rem;
+    height: 16.40625rem;
     border: 0.25rem solid $purple;
     margin-top: 2rem;
     margin-bottom: 3rem;
     background-size: cover;
 
     .repo-container {
-      width: 93%;
+      width: 100%;
       display: flex;
       justify-content: space-around;
     }
 
     &.effect .info {
-      background-color: #333333;
       background-color: rgba(0, 0, 0, 0.6);
       opacity: 0;
       pointer-events: none;
-      -webkit-transition: all 0.35s ease-in-out;
-      -moz-transition: all 0.35s ease-in-out;
-      transition: all 0.35s ease-in-out;
+      @include transition();
 
       h3 {
         visibility: hidden;
@@ -349,9 +352,7 @@ section {
         font-size: 1.5rem;
         margin: 0 1.875rem;
         text-shadow: 0 0 0.0625rem white, 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
-        -webkit-transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        transition: all 0.35s ease-in-out;
+        @include transition();
       }
 
       p {
@@ -361,9 +362,7 @@ section {
         font-style: italic;
         margin: 0 1.875rem;
         border-top: 0.0625rem solid rgba(255, 255, 255, 0.5);
-        -webkit-transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        transition: all 0.35s ease-in-out;
+        @include transition();
       }
     }
 
@@ -406,8 +405,8 @@ section {
 }
 
 .info-back {
-  height: 21.875rem;
-  width: 21.875rem;
+  height: 16.40625rem;
+  width: 16.40625rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
