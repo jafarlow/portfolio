@@ -102,7 +102,7 @@ p {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/cefalu.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/images/cefalu.jpg");
 
   /* Set a specific height */
   height: 60%;
@@ -381,19 +381,19 @@ section {
   }
 
   .tic-tac-toe {
-    background-image: url("public/tic-tac-toe.png");
+    background-image: url("public/images/tic-tac-toe.png");
   }
 
   .collection-builder {
-    background-image: url("public/collection-builder.png");
+    background-image: url("public/images/collection-builder.png");
   }
 
   .would-you-rather {
-    background-image: url("public/would-you-rather.png");
+    background-image: url("public/images/would-you-rather.png");
   }
 
   .readers-wishlist {
-    background-image: url("public/readers-wishlist.png");
+    background-image: url("public/images/readers-wishlist.png");
   }
 }
 
