@@ -65,45 +65,10 @@ h2, h3 {
 p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
-
-  // Hyphenation set below with necessary prefixes and fallbacks
-  // Hyphens turned on
-  // Limit word length and # of chars before & after hyphen
-  // Limit # of consecutive hyphens
-  // Prevent hypens on last line of paragraph
-  // Set hyphenation zone to prevent over-hyphenization
-
-  // code below sourced from http://clagnut.com/blog/2395
-
-  // Safari
+  // Safari--IE/Edge--Chrome/Firefox hyphenation
   -webkit-hyphens: auto;
-  -webkit-hyphenate-limit-before: 3;
-  -webkit-hyphenate-limit-after: 3;
-  -webkit-hyphenate-limit-chars: 6 3 3;
-  -webkit-hyphenate-limit-lines: 2;
-  -webkit-hyphenate-limit-last: always;
-  -webkit-hyphenate-limit-zone: 8%;
-
-  // Firefox
-  -moz-hyphens: auto;
-  -moz-hyphenate-limit-chars: 6 3 3;
-  -moz-hyphenate-limit-lines: 2;
-  -moz-hyphenate-limit-last: always;
-  -moz-hyphenate-limit-zone: 8%;
-
-  //IE & Edge
   -ms-hyphens: auto;
-  -ms-hyphenate-limit-chars: 6 3 3;
-  -ms-hyphenate-limit-lines: 2;
-  -ms-hyphenate-limit-last: always;
-  -ms-hyphenate-limit-zone: 8%;
-
-  // Fallbacks
   hyphens: auto;
-  hyphenate-limit-chars: 6 3 3;
-  hyphenate-limit-lines: 2;
-  hyphenate-limit-last: always;
-  hyphenate-limit-zone: 8%;
 }
 
 /* The hero image */
