@@ -356,10 +356,12 @@ section {
       @include transition();
 
       p {
+        text-align: center;
         visibility: hidden;
         color: #fff;
         font-style: italic;
-        margin: 0 1.875rem;
+        padding: 0 1rem;
+        hyphens: unset;
         @include transition();
       }
     }
@@ -399,6 +401,10 @@ section {
 
   .tolkien {
     background-image: url("public/images/tolkien.png")
+  }
+
+  .weather {
+    background-image: url("public/images/weather-app.png")
   }
 }
 
