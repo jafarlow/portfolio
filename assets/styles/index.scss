@@ -304,7 +304,9 @@ section {
     flex-direction: column;
     width: 16.40625rem;
     height: 16.40625rem;
-    border: 0.25rem solid $purple;
+    border-top: 0.25rem solid $purple;
+    border-right: 0.25rem solid $purple;
+    border-left: 0.25rem solid $purple;
     margin-bottom: 3rem;
     background-size: cover;
 
@@ -312,6 +314,33 @@ section {
       width: 100%;
       display: flex;
       justify-content: space-around;
+    }
+
+    section {
+      width: 16.40625rem;
+      margin-top: -0.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0.25rem;
+      background-color: rgba(0,0,0,0.3);
+      // border: 0.25rem solid $purple;
+      border-left: 0.25rem solid $purple;
+      border-right: 0.25rem solid $purple;
+      border-bottom: 0.25rem solid $purple;
+      border-radius: 0 0 1rem 1rem;
+      .logos {
+        width: 100%;
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.5rem;
+        // margin-bottom: 1rem;
+        img {
+          width: 2.25rem;
+          margin: 0.25rem;
+        }
+      }
     }
 
     &.effect .info {
@@ -331,19 +360,6 @@ section {
       .empty {
         visibility: hidden;
         flex: 0.75;
-      }
-
-      .logos {
-        width: 100%;
-        display: flex;
-        // flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        img {
-          width: 2.25rem;
-          margin: 0.25rem;
-        }
       }
 
       p {
