@@ -334,6 +334,15 @@ section {
       border-right: 0.25rem solid $purple;
       border-bottom: 0.25rem solid $purple;
       border-radius: 0 0 1rem 1rem;
+
+      // NOTE: prep test for future structure changes
+      // p {
+      //   font-size: 1rem;
+      //   text-align: center;
+      //   hyphens: unset;
+      //   padding: 0 0.25rem;
+      //   margin-bottom: -0.25rem;
+      // }
       .logos {
         width: 100%;
         display: flex;
@@ -360,11 +369,6 @@ section {
         display: flex;
         justify-content: center;
         flex-direction: column;
-      }
-
-      .empty {
-        visibility: hidden;
-        flex: 0.75;
       }
 
       p {
@@ -526,16 +530,16 @@ footer {
         width: 100%;
       }
 
+      section {
+        width: 18.59375rem;
+      }
+
       &.effect .info {
         opacity: 0.75;
 
         .info-back {
           width: 18.59375rem;
           height: 18.59375rem;
-        }
-
-        .empty {
-          flex: 0.5;
         }
 
         .logos {
