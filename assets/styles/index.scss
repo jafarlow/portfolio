@@ -311,7 +311,6 @@ section {
     border-top: 0.25rem solid $purple;
     border-right: 0.25rem solid $purple;
     border-left: 0.25rem solid $purple;
-    // margin-bottom: 3rem;
     background-size: cover;
 
     .repo-container {
@@ -329,7 +328,6 @@ section {
       align-items: center;
       padding-bottom: 0.25rem;
       background-color: rgba(0,0,0,0.1);
-      // border: 0.25rem solid $purple;
       border-left: 0.25rem solid $purple;
       border-right: 0.25rem solid $purple;
       border-bottom: 0.25rem solid $purple;
@@ -346,10 +344,9 @@ section {
       .logos {
         width: 100%;
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         margin-top: 0.5rem;
-        // margin-bottom: 1rem;
+
         img {
           width: 2.25rem;
           margin: 0.25rem;
@@ -423,14 +420,6 @@ section {
     background-image: url("public/images/weather-app.png")
   }
 }
-
-// .info-back {
-//   height: 16.40625rem;
-//   width: 16.40625rem;
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-// }
 
 .contact {
   text-align: center;
