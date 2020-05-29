@@ -127,6 +127,8 @@ section {
   margin-top: 4rem;
 }
 
+/* ABOUT ME SECTION */
+
 .about-header {
   font-size: 1.25rem;
   font-style: italic;
@@ -162,6 +164,8 @@ section {
     }
   }
 }
+
+/* LOGOS & ICONS SECTION */
 
 .icons-wrapper {
   display: flex;
@@ -279,6 +283,8 @@ section {
   }
 }
 
+/* PROJECT SECTION */
+
 .project-paragraph {
   text-align: center;
   margin: 1rem;
@@ -364,11 +370,10 @@ section {
         height: 16.40625rem;
         width: 16.40625rem;
         display: flex;
-        justify-content: center;
         flex-direction: column;
-      }
+        justify-content: center;
+        margin: 0;
 
-      p {
         text-align: center;
         visibility: hidden;
         color: #fff;
@@ -386,7 +391,7 @@ section {
         opacity: 1;
       }
 
-      p {
+      .info-back {
         visibility: visible;
       }
     }
@@ -421,6 +426,8 @@ section {
   }
 }
 
+/* CONTACT INFO SECTION */
+
 .contact {
   text-align: center;
 
@@ -433,6 +440,8 @@ section {
     margin-top: 1rem;
   }
 }
+
+/* FOOTER */
 
 footer {
   border-top: 0.2rem solid $orange;
@@ -483,6 +492,8 @@ footer {
     }
   }
 }
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 54.6875rem) {
   main {
