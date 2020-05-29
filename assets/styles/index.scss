@@ -540,16 +540,13 @@ footer {
         .info-back {
           width: 18.59375rem;
           height: 18.59375rem;
+          font-weight: bold;
+          visibility: visible;
         }
 
         .logos {
           padding-top: 2rem;
           margin-bottom: 0;
-        }
-
-        p {
-          font-weight: bold;
-          visibility: visible;
         }
       }
     }
@@ -567,6 +564,10 @@ footer {
   }
 
   p {
+    font-size: 1rem;
+  }
+
+  .link {
     font-size: 1rem;
   }
 }
