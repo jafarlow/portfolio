@@ -158,6 +158,7 @@ section {
   text-decoration: underline;
   font-size: 1.125rem;
   color: $link-blue;
+  display: inline-block;
 
   &:hover {
     text-decoration: none;
