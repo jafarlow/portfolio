@@ -62,13 +62,18 @@ h2, h3 {
   font-family: "Ubuntu", sans-serif;
 }
 
-p {
+p, ul {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   // Safari--IE/Edge--Chrome/Firefox hyphenation
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+}
+
+ul {
+  margin-left: 0.5rem;
+  padding: 0 2rem;
 }
 
 /* The hero image */
@@ -143,6 +148,10 @@ section {
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem;
+
+  &:nth-of-type(4n) {
+    margin-bottom: 0;
+  }
 }
 
 .link {
@@ -563,8 +572,12 @@ footer {
     margin: 1rem;
   }
 
-  p {
+  p, ul {
     font-size: 1rem;
+  }
+
+  ul {
+    padding-right: 1rem;
   }
 
   .link {
