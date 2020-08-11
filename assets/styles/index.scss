@@ -36,8 +36,8 @@ $ubuntu-os: #DD4814;
 // primary font for the page
 @font-face {
   font-family: "Ubuntu";
-  src: url("../../../public/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
-       url("../../../public/fonts/ubuntu-regular-webfont.woff") format("woff");
+  src: url("./public/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
+       url("./public/fonts/ubuntu-regular-webfont.woff") format("woff");
 }
 
 @mixin transition() {
