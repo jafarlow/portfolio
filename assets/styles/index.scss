@@ -38,6 +38,13 @@ $ubuntu-os: #DD4814;
   font-family: "Ubuntu";
   src: url("public/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
        url("public/fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Signature";
+  src: url("public/fonts/signature-regular.woff") format("woff");
+  font-display: swap;
 }
 
 @mixin transition() {
@@ -50,10 +57,10 @@ body, html {
   height: 100vh;
   background-color: $white-gray;
   // load the system defaults first -- lowest jank on ubuntu systems
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-             'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-             'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-             sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  //            'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+  //            'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //            sans-serif;
 }
 
 main {
@@ -62,7 +69,7 @@ main {
 }
 
 h1 {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Signature", cursive;
   font-size: 6.5rem;
   color: $white-gray;
 }
