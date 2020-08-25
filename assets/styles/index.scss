@@ -207,6 +207,12 @@ section {
     margin: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.145rem solid;
+
+    &:hover {
+      transform: scale(1.25);
+      transition-delay: 250ms;
+      transition-duration: 500ms;
+    }
   }
 
   #atom {
