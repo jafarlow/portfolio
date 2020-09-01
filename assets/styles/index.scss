@@ -168,7 +168,8 @@ section {
   margin-left: 1rem;
   margin-right: 1rem;
 
-  &:nth-of-type(4n) {
+  // this is for the "Currently Reading" part
+  &:nth-of-type(6n) {
     margin-bottom: 0;
   }
 }
