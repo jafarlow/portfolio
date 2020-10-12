@@ -11,6 +11,24 @@
     <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#tech">Tech</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div role="img" class="hero-image" alt="Cover photo: Seaside view of Cefalù, Italy" title="Seaside view of Cefalù, Italy">
       <div class="hero-text">
         <h1>Jacob Farlow</h1>
@@ -19,7 +37,7 @@
     </div>
     <main>
       <section>
-        <h2 class="section-head">About Me</h2>
+        <h2 id="about" class="section-head">About Me</h2>
         <img width="500" height="337" src="public/images/jacob-min.jpg" alt="Photo of Jacob" class="profile-img" title="Photo of Jacob in a suit and tie">
         <h3 class="about-header">On the business side:</h3>
         <p class="about-paragraph">
@@ -122,7 +140,7 @@
       </section>
 
       <section>
-        <h2 class="section-head">Frameworks, Languages, and Technology</h2>
+        <h2 id="tech" class="section-head">Frameworks, Languages, and Technology</h2>
           <div class="icons-wrapper">
             <svg aria-hidden="true" id="atom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="80">
               <title>Atom text editor logo</title>
@@ -318,7 +336,7 @@
       </section>
 
       <section>
-        <h2 class="section-head">Projects</h2>
+        <h2 id="projects" class="section-head">Projects</h2>
 
         <h3 class="about-header">Active focus:</h3>
         <p class="about-paragraph">I just wrapped up version 3.0 of my Recipe Search app! I expanded functionality so users can click "View More" to reveal additional recipes from their search. It's a simple enough feature, which of course means it was far more difficult to implement.
@@ -573,7 +591,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2 class="section-head">Contact Info</h2>
         <p class="contact-text"> <a class="link" href="./public/Resume--JacobAFarlow.pdf" target="_blank" rel="external nofollow noopener noreferrer">Click here</a> to view my resume.</p>
         <p>The best way to reach me is by email. Drop me a line at <span class="contact-email">JacobAFarlow@gmail.com</span></p>
