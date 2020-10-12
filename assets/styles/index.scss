@@ -95,6 +95,43 @@ ul {
   padding: 0 2rem;
 }
 
+// HEADER
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  background-color: $purple;
+  z-index: 1;
+
+  border-bottom: 0.175rem solid $orange;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+
+  ul {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 2rem;
+
+    a {
+      color: $white-gray;
+    }
+  }
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -110,6 +147,8 @@ ul {
   position: relative;
 
   border-bottom: 0.1875rem solid $orange;
+
+  margin-top: 5rem;
 }
 
 /* Place text in the middle of the image */
