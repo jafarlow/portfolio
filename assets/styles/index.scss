@@ -242,11 +242,22 @@ section {
 
 /* LOGOS & ICONS SECTION */
 
+.tech {
+  margin-bottom: 0;
+  // Previous experience
+  margin-top: 1rem;
+
+  // Frequently utilized
+  &:nth-of-type(1) {
+    margin-top: 2rem;
+  }
+}
+
 .icons-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2rem;
+  // margin-top: 2rem;
 
   svg {
     width: 5rem;
