@@ -29,6 +29,7 @@ $mongodb: #4faa41;
 $netlify: #0e1e25;
 $node: #83CD29;
 $npm: #cb3837;
+$postman: #FF6C37;
 $rails: #A62C46;
 $react: #61DAFB;
 $ruby: #D91404;
@@ -369,6 +370,10 @@ section {
 
   #npm {
     border-color: $npm;
+  }
+
+  #postman {
+    border-color: $postman;
   }
 
   #rails {
