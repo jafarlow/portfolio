@@ -38,6 +38,7 @@ $trello: #23719F;
 $typescript: #007ACC;
 $ubuntu-os: #DD4814;
 $vscode: #0877B9;
+$yarn: #2C8EBB;
 
 // primary font for the page
 @font-face {
@@ -405,6 +406,10 @@ section {
   }
 
   #vscode {
+    border-color: $vscode;
+  }
+
+  #yarn {
     border-color: $vscode;
   }
 }
