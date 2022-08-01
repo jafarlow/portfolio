@@ -8,8 +8,10 @@ $link-blue: #014cac;
 $link-hover: #0056b3;
 
 // Icon colors
+$appcenter: #CB2E62;
 $atom: #67595D;
 $bootstrap: #5B4282;
+$confluence: #0A5FD9;
 $css: #1572B6;
 $ember: #dd3f24;
 $express: #333333;
@@ -20,18 +22,24 @@ $handlebars: #351704;
 $heroku: #6762A6;
 $html: #E44D26;
 $javascript: #F0DB4F;
+$jira: #0052CC;
 $jquery: #0868AC;
+$macos: #7D7D7D;
 $mongodb: #4faa41;
 $netlify: #0e1e25;
 $node: #83CD29;
 $npm: #cb3837;
+$postman: #FF6C37;
 $rails: #A62C46;
 $react: #61DAFB;
 $ruby: #D91404;
 $sass: #CB6699;
 $slack: #2d333a;
 $trello: #23719F;
+$typescript: #007ACC;
 $ubuntu-os: #DD4814;
+$vscode: #0877B9;
+$yarn: #2C8EBB;
 
 // primary font for the page
 @font-face {
@@ -272,9 +280,13 @@ section {
     }
   }
 
+  #appcenter {
+    border-color: $appcenter;
+  }
+
   #atom {
     border-color: $atom;
-
+    
     #atom-text {
       stroke: $atom;
       stroke-width: 1;
@@ -285,19 +297,23 @@ section {
     border-color: $bootstrap;
   }
 
+  #confluence {
+    border-color: $confluence;
+  }
+  
   #css3 {
     border-color: $css;
   }
-
+  
   #ember {
     border-color: $ember;
   }
-
+  
   #express {
     fill: $express;
     border-color: $express;
   }
-
+  
   #git {
     border-color: $git;
   }
@@ -306,16 +322,16 @@ section {
     fill: $github;
     border-color: $github;
   }
-
+  
   #grunt {
     border-color: $grunt;
   }
-
+  
   #handlebars {
     fill: $handlebars;
     border-color: $handlebars;
   }
-
+  
   #heroku {
     border-color: $heroku;
   }
@@ -327,9 +343,17 @@ section {
   #javascript {
     border-color: $javascript;
   }
+  
+  #jira {
+    border-color: $jira;
+  }
 
   #jquery {
     border-color: $jquery;
+  }
+
+  #macos {
+    border-color: $macos;
   }
 
   #mongodb {
@@ -346,6 +370,10 @@ section {
 
   #npm {
     border-color: $npm;
+  }
+
+  #postman {
+    border-color: $postman;
   }
 
   #rails {
@@ -374,8 +402,20 @@ section {
     border-color: $trello;
   }
 
+  #typescript {
+    border-color: $typescript;
+  }
+
   #ubuntu-os {
     border-color: $ubuntu-os;
+  }
+
+  #vscode {
+    border-color: $vscode;
+  }
+
+  #yarn {
+    border-color: $vscode;
   }
 }
 
