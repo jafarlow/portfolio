@@ -58,8 +58,7 @@ nav {
   nav ul {
     width: 100%;
     display: inline-flex;
-    justify-content: flex-end;
-    margin-bottom: 0; }
+    justify-content: flex-end; }
   nav li {
     list-style: none;
     margin-right: 2rem; }
