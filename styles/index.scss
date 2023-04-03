@@ -1,0 +1,751 @@
+// @import '~bootstrap/scss/bootstrap';
+$purple: #522D80;
+$orange: #F66733;
+$light-gray: #d3d3d3;
+$white-gray: #f3f3f3;
+$almost-black: #16161d;
+$link-blue: #014cac;
+$link-hover: #0056b3;
+
+// Icon colors
+$appcenter: #CB2E62;
+$atom: #67595D;
+$bootstrap: #5B4282;
+$confluence: #0A5FD9;
+$css: #1572B6;
+$ember: #dd3f24;
+$express: #333333;
+$git: #F34F29;
+$github: #24292e;
+$grunt: #493310;
+$handlebars: #351704;
+$heroku: #6762A6;
+$html: #E44D26;
+$javascript: #F0DB4F;
+$jira: #2684FF;
+$jquery: #0868AC;
+$macos: #7D7D7D;
+$mongodb: #4faa41;
+$netlify: #0e1e25;
+$node: #83CD29;
+$npm: #cb3837;
+$postman: #FF6C37;
+$rails: #A62C46;
+$react: #61DAFB;
+$ruby: #D91404;
+$sass: #CB6699;
+$slack: #2d333a;
+$trello: #23719F;
+$typescript: #007ACC;
+$ubuntu-os: #DD4814;
+$vscode: #0877B9;
+$yarn: #2C8EBB;
+
+// primary font for the page
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../public/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
+       url("../public/fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Signature";
+  src: url("../public/fonts/signature-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@mixin transition() {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  background-color: $white-gray;
+  scroll-padding-top: 6rem;
+  // load the system defaults first -- lowest jank on ubuntu systems
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  //            'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+  //            'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //            sans-serif;
+}
+
+main {
+  width: 54.6875rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Signature", cursive;
+  font-size: 6.5rem;
+  color: $white-gray;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+
+p, ul {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  // Safari--IE/Edge--Chrome/Firefox hyphenation
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+ul {
+  margin-left: 0.5rem;
+  padding: 0 2rem;
+}
+
+// HEADER
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  background-color: $purple;
+  z-index: 1;
+
+  border-bottom: 0.175rem solid $orange;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+
+  ul {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    // margin-bottom: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 2rem;
+
+    a {
+      color: $white-gray;
+
+      &:hover {
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/cefalu.jpg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  border-bottom: 0.1875rem solid $orange;
+
+  margin-top: 5rem;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white-gray;
+  font-weight: bold;
+  text-shadow:
+    -0.0625rem -0.0625rem 0 $almost-black,
+    0.0625rem -0.0625rem 0 $almost-black,
+    -0.0625rem 0.0625rem 0 $almost-black,
+    0.0625rem 0.0625rem 0 $almost-black;
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.profile-img {
+  display: block;
+  width: 31.25rem;
+  border: 0.1875rem solid $purple;
+  border-radius: 3.125rem;
+  margin: 2rem auto;
+  box-shadow: 1rem 1rem 1.25rem #666;
+  // content: url("../public/images/jacob-min.jpg");
+}
+
+section {
+  margin: 1rem 0;
+}
+
+.section-head {
+  color: $purple;
+  text-decoration: underline;
+  text-decoration-color: $orange;
+  margin-top: 4rem;
+}
+
+/* ABOUT ME SECTION */
+
+.about-header {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  text-align: left;
+  text-decoration: underline $orange;
+  color: $purple;
+}
+
+.about-paragraph {
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  // this is for the "Currently Reading" part
+  &:nth-of-type(6n) {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  font-size: 1.125rem;
+  color: $link-blue;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  svg {
+    width: 1.125rem;
+    fill: $link-blue;
+    padding-bottom: 0.25rem;
+
+    &:hover {
+      fill: $link-hover;
+    }
+  }
+}
+
+/* LOGOS & ICONS SECTION */
+
+// this is for tech section sub headers
+.tech {
+  margin-bottom: 0;
+  // Previous experience
+  margin-top: 1rem;
+
+  // Frequently utilized
+  &:nth-of-type(1) {
+    margin-top: 2rem;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  svg {
+    width: 5rem;
+    margin: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.145rem solid;
+    // Add transition to the parent selector (not the hover selector) to make transition smooth on both hover-over/hover-off.
+    transition: transform 500ms 250ms;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  #appcenter {
+    border-color: $appcenter;
+  }
+
+  #atom {
+    border-color: $atom;
+    
+    #atom-text {
+      stroke: $atom;
+      stroke-width: 1;
+    }
+  }
+
+  #bootstrap {
+    border-color: $bootstrap;
+  }
+
+  #confluence {
+    border-color: $confluence;
+  }
+  
+  #css3 {
+    border-color: $css;
+  }
+  
+  #ember {
+    border-color: $ember;
+  }
+  
+  #express {
+    fill: $express;
+    border-color: $express;
+  }
+  
+  #git {
+    border-color: $git;
+  }
+
+  #github {
+    fill: $github;
+    border-color: $github;
+  }
+  
+  #grunt {
+    border-color: $grunt;
+  }
+  
+  #handlebars {
+    fill: $handlebars;
+    border-color: $handlebars;
+  }
+  
+  #heroku {
+    border-color: $heroku;
+  }
+
+  #html5 {
+    border-color: $html;
+  }
+
+  #javascript {
+    border-color: $javascript;
+  }
+  
+  #jira {
+    border-color: $jira;
+  }
+
+  #jquery {
+    border-color: $jquery;
+  }
+
+  #macos {
+    border-color: $macos;
+  }
+
+  #mongodb {
+    border-color: $mongodb;
+  }
+
+  #netlify {
+    border-color: $netlify;
+  }
+
+  #node {
+    border-color: $node;
+  }
+
+  #npm {
+    border-color: $npm;
+  }
+
+  #postman {
+    border-color: $postman;
+  }
+
+  #rails {
+    fill: $rails;
+    border-color: $rails;
+  }
+
+  #react {
+    fill: $react;
+    border-color: $react;
+  }
+
+  #ruby {
+    border-color: $ruby;
+  }
+
+  #sass {
+    border-color: $sass;
+  }
+
+  #slack {
+    border-color: $slack;
+  }
+
+  #trello {
+    border-color: $trello;
+  }
+
+  #typescript {
+    border-color: $typescript;
+  }
+
+  #ubuntu-os {
+    border-color: $ubuntu-os;
+  }
+
+  #vscode {
+    border-color: $vscode;
+  }
+
+  #yarn {
+    border-color: $vscode;
+  }
+}
+
+/* PROJECT SECTION */
+
+.project-paragraph {
+  text-align: center;
+  margin: 1rem;
+}
+
+.project-overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+
+  .project-wrapper {
+    margin-bottom: 6rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: $purple;
+    text-decoration: underline;
+    text-decoration-color: $orange;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 16.40625rem;
+    height: 16.40625rem;
+    border-top: 0.25rem solid $purple;
+    border-right: 0.25rem solid $purple;
+    border-left: 0.25rem solid $purple;
+    background-size: cover;
+
+    // so the background hover effect will remain within the box
+    a {
+      width: 16.40625rem;
+    }
+
+    .repo-container {
+      width: 100%;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-align: center;
+      }
+    }
+
+    section {
+      width: 16.40625rem;
+      margin-top: -0.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0.25rem;
+      background-color: rgba(0,0,0,0.1);
+      border-left: 0.25rem solid $purple;
+      border-right: 0.25rem solid $purple;
+      border-bottom: 0.25rem solid $purple;
+      border-radius: 0 0 1rem 1rem;
+
+      // NOTE: prep test for future structure changes
+      // p {
+      //   font-size: 1rem;
+      //   text-align: center;
+      //   hyphens: unset;
+      //   padding: 0 0.25rem;
+      //   margin-bottom: -0.25rem;
+      // }
+      .logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+
+        img {
+          width: 2.25rem;
+          margin: 0.25rem;
+        }
+      }
+    }
+
+    &.effect .info {
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      pointer-events: none;
+      @include transition();
+
+      .info-back {
+        height: 16.40625rem;
+        // width: 16.40625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+
+        text-align: center;
+        visibility: hidden;
+        color: #fff;
+        font-style: italic;
+        padding: 0 1rem;
+        hyphens: unset;
+        @include transition();
+      }
+    }
+
+    &.effect a:hover {
+      text-decoration: none;
+
+      .info {
+        opacity: 1;
+      }
+
+      .info-back {
+        visibility: visible;
+      }
+    }
+  }
+
+  .tic-tac-toe {
+    background-image: url("../public/images/tic-tac-toe.png");
+  }
+
+  .collection-builder {
+    background-image: url("../public/images/collection-builder.png");
+  }
+
+  .would-you-rather {
+    background-image: url("../public/images/would-you-rather.png");
+  }
+
+  .readers-wishlist {
+    background-image: url("../public/images/readers-wishlist.png");
+  }
+
+  .rps {
+    background-image: url("../public/images/rock-paper-scissors.png")
+  }
+
+  .tolkien {
+    background-image: url("../public/images/tolkien.png")
+  }
+
+  .weather {
+    background-image: url("../public/images/weather-app.png")
+  }
+
+  .recipe {
+    background-image: url("../public/images/recipe.png")
+  }
+}
+
+/* CONTACT INFO SECTION */
+
+.contact {
+  text-align: center;
+
+  &-email {
+    color: $purple;
+    font-weight: bold;
+  }
+
+  &-text {
+    margin-top: 1.5rem;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 0.2rem solid $orange;
+  background-color: $purple;
+  height: 10rem;
+  color: $white-gray;
+  margin-top: 4rem;
+
+  .footer-section {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .footer-icon {
+      margin: 0 1rem 0 1rem;
+      color: $white-gray;
+
+      svg {
+        width: 2rem;
+        fill: $white-gray;
+
+        &:hover {
+          fill: $orange;
+        }
+      }
+    }
+  }
+
+  #credit {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  #devicon {
+    color: $white-gray;
+    text-decoration: underline;
+
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 54.6875rem) {
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .icons-wrapper svg {
+    width: 4rem;
+    margin: 1.25rem;
+  }
+
+  .section-head {
+    margin-top: 3rem;
+  }
+
+  .profile-img {
+    max-width: 28.125rem;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .project-overview {
+    .projects {
+      // this is 85% of the previous width/height
+      width: 18.59375rem;
+      height: 18.59375rem;
+
+      .repo-container {
+        width: 100%;
+      }
+
+      section {
+        width: 18.59375rem;
+      }
+
+      &.effect .info {
+        opacity: 0.75;
+
+        .info-back {
+          width: 18.59375rem;
+          height: 18.59375rem;
+          font-weight: bold;
+          visibility: visible;
+        }
+
+        .logos {
+          padding-top: 2rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 31.25rem) {
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  header {
+    height: 3rem;
+  }
+
+  .hero-image {
+    margin-top: 3rem;
+  }
+
+  .profile-img {
+    width: 75%;
+  }
+
+  .icons-wrapper svg {
+    width: 3.5rem;
+    margin: 1rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding-right: 1rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+}
