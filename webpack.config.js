@@ -10,6 +10,8 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
   entry: './src/index.js',
+  // disabling cache in watch mode 
+  cache: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'public/[name][ext]',
@@ -41,10 +43,12 @@ const config = {
       {
         test: /\.css$/i,
         use: [stylesHandler,'css-loader'],
+        sideEffects: true,
       },
       {
         test: /\.s[ac]ss$/i,
         use: [stylesHandler, 'css-loader', 'sass-loader'],
+        sideEffects: true,
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|pdf|eot|ttf|woff|woff2)$/i,
