@@ -1,4 +1,4 @@
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 $purple: #522D80;
 $orange: #F66733;
 $light-gray: #d3d3d3;
@@ -44,14 +44,14 @@ $yarn: #2C8EBB;
 // primary font for the page
 @font-face {
   font-family: "Ubuntu";
-  src: url("public/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
-       url("public/fonts/ubuntu-regular-webfont.woff") format("woff");
+  src: url("../public/fonts/ubuntu-regular-webfont.woff2") format("woff2"),
+       url("../public/fonts/ubuntu-regular-webfont.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Signature";
-  src: url("public/fonts/signature-regular.woff") format("woff");
+  src: url("../public/fonts/signature-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -63,6 +63,7 @@ $yarn: #2C8EBB;
 
 body, html {
   height: 100vh;
+  margin: 0;
   background-color: $white-gray;
   scroll-padding-top: 6rem;
   // load the system defaults first -- lowest jank on ubuntu systems
@@ -128,7 +129,7 @@ nav {
     width: 100%;
     display: inline-flex;
     justify-content: flex-end;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 
   li {
@@ -149,7 +150,7 @@ nav {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/images/cefalu.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/cefalu.jpg");
 
   /* Set a specific height */
   height: 60%;
@@ -192,6 +193,7 @@ nav {
   border-radius: 3.125rem;
   margin: 2rem auto;
   box-shadow: 1rem 1rem 1.25rem #666;
+  // content: url("../public/images/jacob-min.jpg");
 }
 
 section {
@@ -260,6 +262,17 @@ section {
   &:nth-of-type(1) {
     margin-top: 2rem;
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .icons-wrapper {
@@ -455,11 +468,20 @@ section {
     border-left: 0.25rem solid $purple;
     background-size: cover;
 
+    // so the background hover effect will remain within the box
+    a {
+      width: 16.40625rem;
+    }
+
     .repo-container {
       width: 100%;
       font-weight: bold;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+
+      a {
+        text-align: center;
+      }
     }
 
     section {
@@ -504,7 +526,7 @@ section {
 
       .info-back {
         height: 16.40625rem;
-        width: 16.40625rem;
+        // width: 16.40625rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -534,35 +556,35 @@ section {
   }
 
   .tic-tac-toe {
-    background-image: url("public/images/tic-tac-toe.png");
+    background-image: url("../public/images/tic-tac-toe.png");
   }
 
   .collection-builder {
-    background-image: url("public/images/collection-builder.png");
+    background-image: url("../public/images/collection-builder.png");
   }
 
   .would-you-rather {
-    background-image: url("public/images/would-you-rather.png");
+    background-image: url("../public/images/would-you-rather.png");
   }
 
   .readers-wishlist {
-    background-image: url("public/images/readers-wishlist.png");
+    background-image: url("../public/images/readers-wishlist.png");
   }
 
   .rps {
-    background-image: url("public/images/rock-paper-scissors.png")
+    background-image: url("../public/images/rock-paper-scissors.png")
   }
 
   .tolkien {
-    background-image: url("public/images/tolkien.png")
+    background-image: url("../public/images/tolkien.png")
   }
 
   .weather {
-    background-image: url("public/images/weather-app.png")
+    background-image: url("../public/images/weather-app.png")
   }
 
   .recipe {
-    background-image: url("public/images/recipe.png")
+    background-image: url("../public/images/recipe.png")
   }
 }
 
