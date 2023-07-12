@@ -74,7 +74,7 @@ body, html {
 }
 
 main {
-  width: 54.6875rem;
+  width: 70rem;
   margin: 0 auto;
 }
 
@@ -447,6 +447,30 @@ section {
 
   .project-wrapper {
     margin-bottom: 6rem;
+    width: 16.90625rem;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+    
+    .learning {
+      margin: 0;
+      padding: 0.5rem;
+      text-align: justify;
+      min-height: 5.375rem;
+      border-top: 0.25rem solid $purple;
+      border-right: 0.25rem solid $purple;
+      border-left: 0.25rem solid $purple;
+      width: 16.90625rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      background-color: rgba(0,0,0,0.1);
+
+      p {
+        margin: 0;
+      }
+    }
   }
 
   h4 {
@@ -461,16 +485,18 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 16.40625rem;
-    height: 16.40625rem;
-    border-top: 0.25rem solid $purple;
+    width: 16.90625rem;
+    height: 16.90625rem;
+    border-top: 0.125rem solid $purple;
+    border-bottom: 0.125rem solid $purple;
     border-right: 0.25rem solid $purple;
     border-left: 0.25rem solid $purple;
     background-size: cover;
+    box-sizing: border-box;
 
     // so the background hover effect will remain within the box
     a {
-      width: 16.40625rem;
+      width: 16.90625rem;
     }
 
     .repo-container {
@@ -485,7 +511,7 @@ section {
     }
 
     section {
-      width: 16.40625rem;
+      width: 16.90625rem;
       margin-top: -0.25rem;
       display: flex;
       flex-direction: column;
@@ -496,6 +522,7 @@ section {
       border-right: 0.25rem solid $purple;
       border-bottom: 0.25rem solid $purple;
       border-radius: 0 0 1rem 1rem;
+      box-sizing: border-box;
 
       // NOTE: prep test for future structure changes
       // p {
@@ -525,8 +552,8 @@ section {
       @include transition();
 
       .info-back {
-        height: 16.40625rem;
-        // width: 16.40625rem;
+        height: 16.90625rem;
+        // width: 16.90625rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -555,6 +582,10 @@ section {
     }
   }
 
+  .retired {
+    border-top: 0.25rem solid $purple;
+  };
+
   .tic-tac-toe {
     background-image: url("../public/images/tic-tac-toe.png");
   }
@@ -572,19 +603,19 @@ section {
   }
 
   .rps {
-    background-image: url("../public/images/rock-paper-scissors.png")
+    background-image: url("../public/images/rock-paper-scissors.png");
   }
 
   .tolkien {
-    background-image: url("../public/images/tolkien.png")
+    background-image: url("../public/images/tolkien.png");
   }
 
   .weather {
-    background-image: url("../public/images/weather-app.png")
+    background-image: url("../public/images/weather-app.png");
   }
 
   .recipe {
-    background-image: url("../public/images/recipe.png")
+    background-image: url("../public/images/recipe.png");
   }
 }
 
@@ -681,27 +712,43 @@ footer {
   }
 }
 
+@media only screen and (max-width: 68rem) {
+  main {
+    width: 53.125rem;
+  }
+}
+
+@media only screen and (max-width: 53.125rem) {
+  main {
+    width: 48.125rem;
+  }
+}
+
 @media only screen and (max-width: 48rem) {
+  main {
+    width: 100vw;
+  }
+
   .project-overview {
     .projects {
       // this is 85% of the previous width/height
-      width: 18.59375rem;
-      height: 18.59375rem;
+      // width: 18.59375rem;
+      // height: 18.59375rem;
 
       .repo-container {
         width: 100%;
       }
 
       section {
-        width: 18.59375rem;
+        // width: 18.59375rem;
       }
 
       &.effect .info {
         opacity: 0.75;
 
         .info-back {
-          width: 18.59375rem;
-          height: 18.59375rem;
+          // width: 18.59375rem;
+          // height: 18.59375rem;
           font-weight: bold;
           visibility: visible;
         }
