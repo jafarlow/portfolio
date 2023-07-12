@@ -712,27 +712,43 @@ footer {
   }
 }
 
+@media only screen and (max-width: 68rem) {
+  main {
+    width: 53.125rem;
+  }
+}
+
+@media only screen and (max-width: 53.125rem) {
+  main {
+    width: 48.125rem;
+  }
+}
+
 @media only screen and (max-width: 48rem) {
+  main {
+    width: 100vw;
+  }
+
   .project-overview {
     .projects {
       // this is 85% of the previous width/height
-      width: 18.59375rem;
-      height: 18.59375rem;
+      // width: 18.59375rem;
+      // height: 18.59375rem;
 
       .repo-container {
         width: 100%;
       }
 
       section {
-        width: 18.59375rem;
+        // width: 18.59375rem;
       }
 
       &.effect .info {
         opacity: 0.75;
 
         .info-back {
-          width: 18.59375rem;
-          height: 18.59375rem;
+          // width: 18.59375rem;
+          // height: 18.59375rem;
           font-weight: bold;
           visibility: visible;
         }
