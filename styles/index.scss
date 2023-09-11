@@ -11,6 +11,7 @@ $link-hover: #0056b3;
 $appcenter: #CB2E62;
 $atom: #67595D;
 $bootstrap: #5B4282;
+$cloudinary: #3448c5;
 $confluence: #0A5FD9;
 $css: #1572B6;
 $ember: #dd3f24;
@@ -27,6 +28,7 @@ $jquery: #0868AC;
 $macos: #7D7D7D;
 $mongodb: #4faa41;
 $netlify: #0e1e25;
+$nextjs: #000000;
 $node: #83CD29;
 $npm: #cb3837;
 $postman: #FF6C37;
@@ -38,6 +40,7 @@ $slack: #2d333a;
 $trello: #23719F;
 $typescript: #007ACC;
 $ubuntu-os: #DD4814;
+$vercel: #000000;
 $vscode: #0877B9;
 $yarn: #2C8EBB;
 
@@ -310,6 +313,10 @@ section {
     border-color: $bootstrap;
   }
 
+  #cloudinary {
+    border-color: $cloudinary;
+  }
+
   #confluence {
     border-color: $confluence;
   }
@@ -377,6 +384,10 @@ section {
     border-color: $netlify;
   }
 
+  #nextjs {
+    border-color: $nextjs;
+  }
+
   #node {
     border-color: $node;
   }
@@ -421,6 +432,10 @@ section {
 
   #ubuntu-os {
     border-color: $ubuntu-os;
+  }
+
+  #vercel {
+    border-color: $vercel;
   }
 
   #vscode {
@@ -616,6 +631,10 @@ section {
 
   .recipe {
     background-image: url("../public/images/recipe.png");
+  }
+
+  .nature {
+    background-image: url("../public/images/jf-nature.png");
   }
 }
 
