@@ -142,6 +142,9 @@ section {
     .link svg:hover {
       fill: #0056b3; }
 
+.reading-list li {
+  margin-bottom: 0.5rem; }
+
 /* LOGOS & ICONS SECTION */
 .tech {
   margin-bottom: 0;
