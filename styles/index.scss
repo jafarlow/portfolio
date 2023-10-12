@@ -289,13 +289,17 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 
-  svg {
-    width: 5rem;
+  svg, .svg {
+    width: 7rem;
     margin: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.145rem solid;
     // Add transition to the parent selector (not the hover selector) to make transition smooth on both hover-over/hover-off.
     transition: transform 500ms 250ms;
+
+    figcaption {
+      text-align: center;
+    }
 
     &:hover {
       transform: scale(1.25);
@@ -306,17 +310,22 @@ section {
     border-color: $appcenter;
   }
 
-  #atom {
+  .atom {
     border-color: $atom;
-    
-    #atom-text {
-      stroke: $atom;
-      stroke-width: 1;
-    }
+  }
+
+  #atom {
+    background-color: $atom;
+    color: white;
+  }
+
+  .bootstrap {
+    border-color: $bootstrap;
   }
 
   #bootstrap {
-    border-color: $bootstrap;
+    background-color: $bootstrap;
+    color: white;
   }
 
   #cloudinary {
@@ -331,13 +340,22 @@ section {
     border-color: $css;
   }
   
-  #ember {
+  .ember {
     border-color: $ember;
   }
+
+  #ember {
+    background-color: $ember;
+    color: white;
+  }
   
-  #express {
-    fill: $express;
+  .express {
     border-color: $express;
+  }
+
+  #express {
+    background-color: $express;
+    color: white;
   }
   
   #git {
@@ -349,13 +367,22 @@ section {
     border-color: $github;
   }
   
-  #grunt {
+  .grunt {
     border-color: $grunt;
   }
+
+  #grunt {
+    background-color: $grunt;
+    color: white;
+  }
   
-  #handlebars {
-    fill: $handlebars;
+  .handlebars {
     border-color: $handlebars;
+  }
+
+  #handlebars {
+    background-color: $handlebars;
+    color: white;
   }
   
   #heroku {
