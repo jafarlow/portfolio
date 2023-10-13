@@ -29,7 +29,7 @@ $macos: #7D7D7D;
 $mongodb: #4faa41;
 $netlify: #0e1e25;
 $nextjs: #000000;
-$node: #83CD29;
+$node: #679e63;
 $npm: #cb3837;
 $postman: #FF6C37;
 $rails: #A62C46;
@@ -290,8 +290,8 @@ section {
   justify-content: center;
 
   svg, .svg {
-    width: 7rem;
-    margin: 1.5rem;
+    width: 7.5rem;
+    margin: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.145rem solid;
     // Add transition to the parent selector (not the hover selector) to make transition smooth on both hover-over/hover-off.
@@ -299,6 +299,7 @@ section {
 
     figcaption {
       text-align: center;
+      padding: 4px;
     }
 
     &:hover {
@@ -346,7 +347,7 @@ section {
 
   #ember {
     background-color: $ember;
-    color: white;
+    color: black;
   }
   
   .express {
@@ -385,8 +386,13 @@ section {
     color: white;
   }
   
-  #heroku {
+  .heroku {
     border-color: $heroku;
+  }
+
+  #heroku {
+    background-color: $heroku;
+    color: white;
   }
 
   #html5 {
@@ -401,16 +407,26 @@ section {
     border-color: $jira;
   }
 
-  #jquery {
+  .jquery {
     border-color: $jquery;
+  }
+
+  #jquery {
+    background-color: $jquery;
+    color: white;
   }
 
   #macos {
     border-color: $macos;
   }
 
-  #mongodb {
+  .mongodb {
     border-color: $mongodb;
+  }
+
+  #mongodb {
+    background-color: $mongodb;
+    color: black;
   }
 
   #netlify {
@@ -421,8 +437,13 @@ section {
     border-color: $nextjs;
   }
 
-  #node {
+  .node {
     border-color: $node;
+  }
+
+  #node {
+    background-color: $node;
+    color: black;
   }
 
   #npm {
@@ -433,9 +454,13 @@ section {
     border-color: $postman;
   }
 
-  #rails {
-    fill: $rails;
+  .rails {
     border-color: $rails;
+  }
+
+  #rails {
+    background-color: $rails;
+    color: white;
   }
 
   #react {
@@ -443,20 +468,35 @@ section {
     border-color: $react;
   }
 
-  #ruby {
+  .ruby {
     border-color: $ruby;
+  }
+
+  #ruby {
+    background-color: $ruby;
+    color: white;
   }
 
   #sass {
     border-color: $sass;
   }
 
-  #slack {
+  .slack {
     border-color: $slack;
   }
 
-  #trello {
+  #slack {
+    background-color: $slack;
+    color: white;
+  }
+
+  .trello {
     border-color: $trello;
+  }
+
+  #trello {
+    background-color: $trello;
+    color: white;
   }
 
   #typescript {
