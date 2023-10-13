@@ -121,6 +121,22 @@ header {
 
   border-bottom: 0.175rem solid $orange;
 
+  .header-text {
+    min-width: fit-content;
+    color: $white-gray;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    
+    .header-maintext {
+      font-family: "Signature", cursive;
+      font-size: 2rem;
+    }
+
+    .header-subtext {
+      margin-left: 0.75rem;
+    }
+  }
 }
 
 nav {
@@ -937,6 +953,10 @@ footer {
     width: 100vw;
   }
 
+  .header-subtext {
+    display: none;
+  }
+
   .project-overview {
     .projects {
       // this is 85% of the previous width/height
@@ -970,6 +990,30 @@ footer {
   }
 }
 
+// 575px
+@media only screen and (max-width: 35.9375rem) {
+  header {
+    .header-text {
+      margin-left: 1rem;
+    }
+  }
+}
+
+// 550px
+@media only screen and (max-width: 34.375rem) {
+  header {
+    .header-text {
+      .header-maintext {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  ul {
+    margin-left: 0;
+  }
+}
+
 @media only screen and (max-width: 31.25rem) {
   html {
     scroll-padding-top: 4rem;
@@ -977,6 +1021,10 @@ footer {
 
   header {
     height: 3rem;
+
+    .header-text {
+      display: none;
+    }
   }
 
   .hero-image {
@@ -998,6 +1046,7 @@ footer {
 
   ul {
     padding-right: 1rem;
+    margin-left: 0.5rem;
   }
 
   .link {
