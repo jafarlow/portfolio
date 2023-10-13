@@ -27,7 +27,7 @@ $jira: #2684FF;
 $jquery: #0868AC;
 $macos: #7D7D7D;
 $mongodb: #4faa41;
-$netlify: #0e1e25;
+$netlify: #21c5b7;
 $nextjs: #000000;
 $node: #679e63;
 $npm: #cb3837;
@@ -486,12 +486,22 @@ section {
     color: black;
   }
 
-  #netlify {
+  .netlify {
     border-color: $netlify;
   }
 
-  #nextjs {
+  #netlify {
+    background-color: $netlify;
+    color: black;
+  }
+
+  .nextjs {
     border-color: $nextjs;
+  }
+
+  #nextjs {
+    background-color: $nextjs;
+    color: white;
   }
 
   .node {
@@ -503,12 +513,22 @@ section {
     color: black;
   }
 
-  #npm {
+  .npm {
     border-color: $npm;
   }
 
-  #postman {
+  #npm {
+    background-color: $npm;
+    color: white;
+  }
+
+  .postman {
     border-color: $postman;
+  }
+
+  #postman {
+    background-color: $postman;
+    color: white;
   }
 
   .rails {
@@ -520,9 +540,13 @@ section {
     color: white;
   }
 
-  #react {
-    fill: $react;
+  .react {
     border-color: $react;
+  }
+
+  #react {
+    background-color: $react;
+    color: black;
   }
 
   .ruby {
@@ -534,8 +558,13 @@ section {
     color: white;
   }
 
-  #sass {
+  .sass {
     border-color: $sass;
+  }
+
+  #sass {
+    background-color: $sass;
+    color: white;
   }
 
   .slack {
@@ -556,24 +585,49 @@ section {
     color: white;
   }
 
-  #typescript {
+  .typescript {
     border-color: $typescript;
   }
 
-  #ubuntu-os {
+  #typescript {
+    background-color: $typescript;
+    color: white;
+  }
+
+  .ubuntu-os {
     border-color: $ubuntu-os;
   }
 
-  #vercel {
+  #ubuntu-os {
+    background-color: $ubuntu-os;
+    color: white;
+  }
+
+  .vercel {
     border-color: $vercel;
   }
 
+  #vercel {
+    background-color: $vercel;
+    color: white;
+  }
+
+  .vscode {
+    border-color: $vscode;
+  }
+
   #vscode {
+    background-color: $vscode;
+    color: white;
+  }
+
+  .yarn {
     border-color: $vscode;
   }
 
   #yarn {
-    border-color: $vscode;
+    background-color: $yarn;
+    color: white;
   }
 }
 
