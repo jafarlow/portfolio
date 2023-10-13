@@ -29,7 +29,7 @@ h2, h3, h4 {
   font-weight: bold;
   font-family: "Ubuntu", sans-serif; }
 
-p, ul {
+p, ul, figcaption {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   -webkit-hyphens: auto;
@@ -50,6 +50,17 @@ header {
   background-color: #522D80;
   z-index: 1;
   border-bottom: 0.175rem solid #F66733; }
+  header .header-text {
+    min-width: fit-content;
+    color: #f3f3f3;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center; }
+    header .header-text .header-maintext {
+      font-family: "Signature", cursive;
+      font-size: 2rem; }
+    header .header-text .header-subtext {
+      margin-left: 0.75rem; }
 
 nav {
   display: flex;
@@ -166,92 +177,198 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .icons-wrapper svg {
-    width: 5rem;
-    margin: 1.5rem;
+  .icons-wrapper svg, .icons-wrapper .svg {
+    width: 7.5rem;
+    margin: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.145rem solid;
-    transition: transform 500ms 250ms; }
-    .icons-wrapper svg:hover {
+    transition: transform 500ms 250ms;
+    display: grid; }
+    .icons-wrapper svg img, .icons-wrapper .svg img {
+      align-self: center;
+      width: 100%;
+      margin-bottom: 0.5rem; }
+    .icons-wrapper svg figcaption, .icons-wrapper .svg figcaption {
+      text-align: center;
+      padding: 4px;
+      align-self: end; }
+    .icons-wrapper svg:hover, .icons-wrapper .svg:hover {
       transform: scale(1.25); }
-  .icons-wrapper #appcenter {
+  .icons-wrapper .appcenter {
     border-color: #CB2E62; }
-  .icons-wrapper #atom {
+  .icons-wrapper #appcenter {
+    background-color: #CB2E62;
+    color: white; }
+  .icons-wrapper .atom {
     border-color: #67595D; }
-    .icons-wrapper #atom #atom-text {
-      stroke: #67595D;
-      stroke-width: 1; }
-  .icons-wrapper #bootstrap {
+  .icons-wrapper #atom {
+    background-color: #67595D;
+    color: white; }
+  .icons-wrapper .bootstrap {
     border-color: #5B4282; }
-  .icons-wrapper #cloudinary {
+  .icons-wrapper #bootstrap {
+    background-color: #5B4282;
+    color: white; }
+  .icons-wrapper .cloudinary {
     border-color: #3448c5; }
-  .icons-wrapper #confluence {
+  .icons-wrapper #cloudinary {
+    background-color: #3448c5;
+    color: white; }
+  .icons-wrapper .confluence {
     border-color: #0A5FD9; }
-  .icons-wrapper #css3 {
+  .icons-wrapper #confluence {
+    background-color: #0A5FD9;
+    color: white; }
+  .icons-wrapper .css3 {
     border-color: #1572B6; }
-  .icons-wrapper #ember {
+  .icons-wrapper #css3 {
+    background-color: #1572B6;
+    color: white; }
+  .icons-wrapper .ember {
     border-color: #dd3f24; }
-  .icons-wrapper #express {
-    fill: #333333;
+  .icons-wrapper #ember {
+    background-color: #dd3f24;
+    color: white; }
+  .icons-wrapper .express {
     border-color: #333333; }
-  .icons-wrapper #git {
+  .icons-wrapper #express {
+    background-color: #333333;
+    color: white; }
+  .icons-wrapper .git {
     border-color: #F34F29; }
-  .icons-wrapper #github {
-    fill: #24292e;
+  .icons-wrapper #git {
+    background-color: #F34F29;
+    color: white; }
+  .icons-wrapper .github {
     border-color: #24292e; }
-  .icons-wrapper #grunt {
+  .icons-wrapper #github {
+    background-color: #24292e;
+    color: white; }
+  .icons-wrapper .grunt {
     border-color: #493310; }
-  .icons-wrapper #handlebars {
-    fill: #351704;
+  .icons-wrapper #grunt {
+    background-color: #493310;
+    color: white; }
+  .icons-wrapper .handlebars {
     border-color: #351704; }
-  .icons-wrapper #heroku {
+  .icons-wrapper #handlebars {
+    background-color: #351704;
+    color: white; }
+  .icons-wrapper .heroku {
     border-color: #6762A6; }
-  .icons-wrapper #html5 {
+  .icons-wrapper #heroku {
+    background-color: #6762A6;
+    color: white; }
+  .icons-wrapper .html5 {
     border-color: #E44D26; }
-  .icons-wrapper #javascript {
+  .icons-wrapper #html5 {
+    background-color: #E44D26;
+    color: white; }
+  .icons-wrapper .javascript {
     border-color: #F0DB4F; }
-  .icons-wrapper #jira {
+  .icons-wrapper #javascript {
+    background-color: #F0DB4F;
+    color: black; }
+  .icons-wrapper .jira {
     border-color: #2684FF; }
-  .icons-wrapper #jquery {
+  .icons-wrapper #jira {
+    background-color: #2684FF;
+    color: white; }
+  .icons-wrapper .jquery {
     border-color: #0868AC; }
-  .icons-wrapper #macos {
+  .icons-wrapper #jquery {
+    background-color: #0868AC;
+    color: white; }
+  .icons-wrapper .macos {
     border-color: #7D7D7D; }
-  .icons-wrapper #mongodb {
+  .icons-wrapper #macos {
+    background-color: #7D7D7D;
+    color: white; }
+  .icons-wrapper .mongodb {
     border-color: #4faa41; }
+  .icons-wrapper #mongodb {
+    background-color: #4faa41;
+    color: black; }
+  .icons-wrapper .netlify {
+    border-color: #21c5b7; }
   .icons-wrapper #netlify {
-    border-color: #0e1e25; }
+    background-color: #21c5b7;
+    color: black; }
+  .icons-wrapper .nextjs {
+    border-color: #000000; }
   .icons-wrapper #nextjs {
-    border-color: #000000; }
+    background-color: #000000;
+    color: white; }
+  .icons-wrapper .node {
+    border-color: #679e63; }
   .icons-wrapper #node {
-    border-color: #83CD29; }
-  .icons-wrapper #npm {
+    background-color: #679e63;
+    color: black; }
+  .icons-wrapper .npm {
     border-color: #cb3837; }
-  .icons-wrapper #postman {
+  .icons-wrapper #npm {
+    background-color: #cb3837;
+    color: white; }
+  .icons-wrapper .postman {
     border-color: #FF6C37; }
-  .icons-wrapper #rails {
-    fill: #A62C46;
+  .icons-wrapper #postman {
+    background-color: #FF6C37;
+    color: white; }
+  .icons-wrapper .rails {
     border-color: #A62C46; }
-  .icons-wrapper #react {
-    fill: #61DAFB;
+  .icons-wrapper #rails {
+    background-color: #A62C46;
+    color: white; }
+  .icons-wrapper .react {
     border-color: #61DAFB; }
-  .icons-wrapper #ruby {
+  .icons-wrapper #react {
+    background-color: #61DAFB;
+    color: black; }
+  .icons-wrapper .ruby {
     border-color: #D91404; }
-  .icons-wrapper #sass {
+  .icons-wrapper #ruby {
+    background-color: #D91404;
+    color: white; }
+  .icons-wrapper .sass {
     border-color: #CB6699; }
-  .icons-wrapper #slack {
+  .icons-wrapper #sass {
+    background-color: #CB6699;
+    color: black; }
+  .icons-wrapper .slack {
     border-color: #2d333a; }
-  .icons-wrapper #trello {
+  .icons-wrapper #slack {
+    background-color: #2d333a;
+    color: white; }
+  .icons-wrapper .trello {
     border-color: #23719F; }
-  .icons-wrapper #typescript {
+  .icons-wrapper #trello {
+    background-color: #23719F;
+    color: white; }
+  .icons-wrapper .typescript {
     border-color: #007ACC; }
-  .icons-wrapper #ubuntu-os {
+  .icons-wrapper #typescript {
+    background-color: #007ACC;
+    color: white; }
+  .icons-wrapper .ubuntu-os {
     border-color: #DD4814; }
-  .icons-wrapper #vercel {
+  .icons-wrapper #ubuntu-os {
+    background-color: #DD4814;
+    color: white; }
+  .icons-wrapper .vercel {
     border-color: #000000; }
+  .icons-wrapper #vercel {
+    background-color: #000000;
+    color: white; }
+  .icons-wrapper .vscode {
+    border-color: #0877B9; }
   .icons-wrapper #vscode {
+    background-color: #0877B9;
+    color: white; }
+  .icons-wrapper .yarn {
     border-color: #0877B9; }
   .icons-wrapper #yarn {
-    border-color: #0877B9; }
+    background-color: #2C8EBB;
+    color: white; }
 
 /* PROJECT SECTION */
 .project-paragraph {
@@ -429,9 +546,11 @@ footer {
     width: 100%; }
   h1 {
     font-size: 4rem; }
-  .icons-wrapper svg {
-    width: 4rem;
+  .icons-wrapper .svg {
+    width: 5.25rem;
     margin: 1.25rem; }
+    .icons-wrapper .svg figcaption {
+      font-size: 1rem; }
   .section-head {
     margin-top: 3rem; }
   .profile-img {
@@ -449,6 +568,8 @@ footer {
 @media only screen and (max-width: 48rem) {
   main {
     width: 100vw; }
+  .header-subtext {
+    display: none; }
   .project-overview .projects .repo-container {
     width: 100%; }
   .project-overview .projects.effect .info {
@@ -460,21 +581,33 @@ footer {
       padding-top: 2rem;
       margin-bottom: 0; } }
 
+@media only screen and (max-width: 35.9375rem) {
+  header .header-text {
+    margin-left: 1rem; } }
+
+@media only screen and (max-width: 34.375rem) {
+  header .header-text .header-maintext {
+    font-size: 1.75rem; }
+  ul {
+    margin-left: 0; } }
+
 @media only screen and (max-width: 31.25rem) {
   html {
     scroll-padding-top: 4rem; }
   header {
     height: 3rem; }
+    header .header-text {
+      display: none; }
   .hero-image {
     margin-top: 3rem; }
   .profile-img {
     width: 75%; }
-  .icons-wrapper svg {
-    width: 3.5rem;
-    margin: 1rem; }
+  .icons-wrapper .svg {
+    margin: .5rem; }
   p, ul {
     font-size: 1rem; }
   ul {
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    margin-left: 0.5rem; }
   .link {
     font-size: 1rem; } }
