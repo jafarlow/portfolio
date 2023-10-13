@@ -94,7 +94,7 @@ h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
 }
 
-p, ul {
+p, ul, figcaption {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   // Safari--IE/Edge--Chrome/Firefox hyphenation
@@ -564,7 +564,7 @@ section {
 
   #sass {
     background-color: $sass;
-    color: white;
+    color: black;
   }
 
   .slack {
@@ -900,9 +900,14 @@ footer {
     font-size: 4rem;
   }
 
-  .icons-wrapper svg {
-    width: 4rem;
+  .icons-wrapper .svg {
+    width: 5.25rem;
     margin: 1.25rem;
+
+    figcaption {
+      font-size: 1rem;
+      // word-wrap: break-word;
+    }
   }
 
   .section-head {
@@ -982,9 +987,9 @@ footer {
     width: 75%;
   }
 
-  .icons-wrapper svg {
-    width: 3.5rem;
-    margin: 1rem;
+  .icons-wrapper .svg {
+    // width: 3.5rem;
+    margin: .5rem;
   }
 
   p, ul {
