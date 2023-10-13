@@ -296,10 +296,18 @@ section {
     border-bottom: 0.145rem solid;
     // Add transition to the parent selector (not the hover selector) to make transition smooth on both hover-over/hover-off.
     transition: transform 500ms 250ms;
+    display: grid;
+
+    img {
+      align-self: center;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
 
     figcaption {
       text-align: center;
       padding: 4px;
+      align-self: end;
     }
 
     &:hover {
@@ -307,8 +315,13 @@ section {
     }
   }
 
-  #appcenter {
+  .appcenter {
     border-color: $appcenter;
+  }
+
+  #appcenter {
+    background-color: $appcenter;
+    color: white;
   }
 
   .atom {
@@ -329,16 +342,31 @@ section {
     color: white;
   }
 
-  #cloudinary {
+  .cloudinary {
     border-color: $cloudinary;
   }
 
-  #confluence {
+  #cloudinary {
+    background-color: $cloudinary;
+    color: white;
+  }
+
+  .confluence {
     border-color: $confluence;
   }
+
+  #confluence {
+    background-color: $confluence;
+    color: white;
+  }
   
-  #css3 {
+  .css3 {
     border-color: $css;
+  }
+
+  #css3 {
+    background-color: $css;
+    color: white;
   }
   
   .ember {
@@ -347,7 +375,7 @@ section {
 
   #ember {
     background-color: $ember;
-    color: black;
+    color: white;
   }
   
   .express {
@@ -359,13 +387,22 @@ section {
     color: white;
   }
   
-  #git {
+  .git {
     border-color: $git;
   }
 
-  #github {
-    fill: $github;
+  #git {
+    background-color: $git;
+    color: white;
+  }
+
+  .github {
     border-color: $github;
+  }
+
+  #github {
+    background-color: $github;
+    color: white;
   }
   
   .grunt {
@@ -395,16 +432,31 @@ section {
     color: white;
   }
 
-  #html5 {
+  .html5 {
     border-color: $html;
   }
 
-  #javascript {
+  #html5 {
+    background-color: $html;
+    color: white;
+  }
+
+  .javascript {
     border-color: $javascript;
   }
+
+  #javascript {
+    background-color: $javascript;
+    color: black;
+  }
   
-  #jira {
+  .jira {
     border-color: $jira;
+  }
+
+  #jira {
+    background-color: $jira;
+    color: white;
   }
 
   .jquery {
@@ -416,8 +468,13 @@ section {
     color: white;
   }
 
-  #macos {
+  .macos {
     border-color: $macos;
+  }
+
+  #macos {
+    background-color: $macos;
+    color: white;
   }
 
   .mongodb {
