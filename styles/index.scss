@@ -83,8 +83,10 @@ main {
 
 h1 {
   font-family: "Signature", cursive;
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   color: $white-gray;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h2, h3, h4 {
@@ -172,7 +174,7 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/cefalu.jpg");
 
   /* Set a specific height */
-  height: 60%;
+  height: 65%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -202,6 +204,7 @@ nav {
 
   p {
     font-size: 1.25rem;
+    background-color: rgba(22, 22, 29, 0.75); //rgba of $almost-black
   }
 }
 
@@ -211,7 +214,7 @@ nav {
   border: 0.1875rem solid $purple;
   border-radius: 3.125rem;
   margin: 2rem auto;
-  box-shadow: 1rem 1rem 1.25rem #666;
+  // box-shadow: 1rem 1rem 1.25rem #666;
   // content: url("../public/images/jacob-min.jpg");
 }
 
@@ -1012,8 +1015,13 @@ footer {
   ul {
     margin-left: 0;
   }
+
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
+// 500px
 @media only screen and (max-width: 31.25rem) {
   html {
     scroll-padding-top: 4rem;
@@ -1032,7 +1040,7 @@ footer {
   }
 
   .profile-img {
-    width: 75%;
+    max-width: 21.875rem; //350px
   }
 
   .icons-wrapper .svg {
