@@ -20,8 +20,10 @@ main {
 
 h1 {
   font-family: "Signature", cursive;
-  font-size: 6.5rem;
-  color: #f3f3f3; }
+  font-size: 4.5rem;
+  color: #f3f3f3;
+  margin: 0;
+  margin-bottom: 1rem; }
 
 h2, h3, h4 {
   text-align: center;
@@ -84,7 +86,7 @@ nav {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/cefalu.jpg");
   /* Set a specific height */
-  height: 60%;
+  height: 65%;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -104,15 +106,15 @@ nav {
   font-weight: bold;
   text-shadow: -0.0625rem -0.0625rem 0 #16161d, 0.0625rem -0.0625rem 0 #16161d, -0.0625rem 0.0625rem 0 #16161d, 0.0625rem 0.0625rem 0 #16161d; }
   .hero-text p {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    background-color: rgba(22, 22, 29, 0.75); }
 
 .profile-img {
   display: block;
   width: 31.25rem;
-  border: 0.1875rem solid #522D80;
+  border: 0.25rem solid #522D80;
   border-radius: 3.125rem;
-  margin: 2rem auto;
-  box-shadow: 1rem 1rem 1.25rem #666; }
+  margin: 2rem auto; }
 
 section {
   margin: 1rem 0; }
@@ -183,10 +185,11 @@ section {
     padding-bottom: 0.5rem;
     border-bottom: 0.145rem solid;
     transition: transform 500ms 250ms;
-    display: grid; }
+    display: grid;
+    justify-items: center; }
     .icons-wrapper svg img, .icons-wrapper .svg img {
       align-self: center;
-      width: 100%;
+      width: 5rem;
       margin-bottom: 0.5rem; }
     .icons-wrapper svg figcaption, .icons-wrapper .svg figcaption {
       text-align: center;
@@ -589,7 +592,9 @@ footer {
   header .header-text .header-maintext {
     font-size: 1.75rem; }
   ul {
-    margin-left: 0; } }
+    margin-left: 0; }
+  h1 {
+    font-size: 3.5rem; } }
 
 @media only screen and (max-width: 31.25rem) {
   html {
@@ -601,7 +606,7 @@ footer {
   .hero-image {
     margin-top: 3rem; }
   .profile-img {
-    width: 75%; }
+    max-width: 21.875rem; }
   .icons-wrapper .svg {
     margin: .5rem; }
   p, ul {
