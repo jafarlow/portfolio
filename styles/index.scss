@@ -211,7 +211,7 @@ nav {
 .profile-img {
   display: block;
   width: 31.25rem;
-  border: 0.1875rem solid $purple;
+  border: 0.25rem solid $purple;
   border-radius: 3.125rem;
   margin: 2rem auto;
   // box-shadow: 1rem 1rem 1.25rem #666;
@@ -316,10 +316,11 @@ section {
     // Add transition to the parent selector (not the hover selector) to make transition smooth on both hover-over/hover-off.
     transition: transform 500ms 250ms;
     display: grid;
+    justify-items: center;
 
     img {
       align-self: center;
-      width: 100%;
+      width: 5rem;
       margin-bottom: 0.5rem;
     }
 
