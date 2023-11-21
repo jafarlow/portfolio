@@ -236,6 +236,10 @@ section {
     color: white; }
   .icons-wrapper .express {
     border-color: #333333; }
+    .icons-wrapper .express img {
+      background-color: #333333;
+      padding: 0.5rem;
+      border-radius: 0.5rem; }
   .icons-wrapper #express {
     background-color: #333333;
     color: white; }
