@@ -194,7 +194,9 @@ section {
     .icons-wrapper svg figcaption, .icons-wrapper .svg figcaption {
       text-align: center;
       padding: 4px;
-      align-self: end; }
+      align-self: end;
+      font-size: 1rem;
+      hyphens: none; }
     .icons-wrapper svg:hover, .icons-wrapper .svg:hover {
       transform: scale(1.25); }
   .icons-wrapper .appcenter {
