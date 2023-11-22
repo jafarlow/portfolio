@@ -668,38 +668,62 @@ section {
 }
 
 .project-overview {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 3rem;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  // margin-bottom: 3rem;
+  display: grid;
+  gap: 1rem;
 
   .project-wrapper {
-    margin-bottom: 6rem;
-    width: 16.90625rem;
-
-    h4 {
-      margin-bottom: 1rem;
-    }
-    
-    .learning {
-      margin: 0;
-      padding: 0.5rem;
-      text-align: justify;
-      min-height: 5.375rem;
-      border-top: 0.25rem solid $purple;
-      border-right: 0.25rem solid $purple;
-      border-left: 0.25rem solid $purple;
-      width: 16.90625rem;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      background-color: rgba(0,0,0,0.1);
-
-      p {
-        margin: 0;
-      }
-    }
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-top: 0.25rem solid $purple;
+    border-bottom: 0.25rem solid $purple;
+    border-right: 0.25rem solid $purple;
+    border-left: 0.25rem solid $purple;
+    border-radius: 0.5rem;
   }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linkout {
+    display: flex;
+    align-items: center;
+  }
+
+  // ! LEGACY CSS CODE -- Need to shift this to a section for the retired projects, if I want to keep it
+  // .project-wrapper {
+  //   margin-bottom: 6rem;
+  //   width: 16.90625rem;
+
+  //   h4 {
+  //     margin-bottom: 1rem;
+  //   }
+    
+  //   .learning {
+  //     margin: 0;
+  //     padding: 0.5rem;
+  //     text-align: justify;
+  //     min-height: 5.375rem;
+  //     border-top: 0.25rem solid $purple;
+  //     border-right: 0.25rem solid $purple;
+  //     border-left: 0.25rem solid $purple;
+  //     width: 16.90625rem;
+  //     box-sizing: border-box;
+  //     display: flex;
+  //     align-items: center;
+  //     background-color: rgba(0,0,0,0.1);
+
+  //     p {
+  //       margin: 0;
+  //     }
+  //   }
+  // }
 
   h4 {
     font-size: 1.25rem;
@@ -709,106 +733,106 @@ section {
     text-decoration-color: $orange;
   }
 
-  .projects {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 16.90625rem;
-    height: 16.90625rem;
-    border-top: 0.125rem solid $purple;
-    border-bottom: 0.125rem solid $purple;
-    border-right: 0.25rem solid $purple;
-    border-left: 0.25rem solid $purple;
-    background-size: cover;
-    box-sizing: border-box;
+  // .projects {
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   width: 16.90625rem;
+  //   height: 16.90625rem;
+  //   border-top: 0.125rem solid $purple;
+  //   border-bottom: 0.125rem solid $purple;
+  //   border-right: 0.25rem solid $purple;
+  //   border-left: 0.25rem solid $purple;
+  //   background-size: cover;
+  //   box-sizing: border-box;
 
-    // so the background hover effect will remain within the box
-    a {
-      width: 16.90625rem;
-    }
+  //   // so the background hover effect will remain within the box
+  //   a {
+  //     width: 16.90625rem;
+  //   }
 
-    .repo-container {
-      width: 100%;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
+  //   .repo-container {
+  //     width: 100%;
+  //     font-weight: bold;
+  //     display: flex;
+  //     justify-content: center;
 
-      a {
-        text-align: center;
-      }
-    }
+  //     a {
+  //       text-align: center;
+  //     }
+  //   }
 
-    section {
-      width: 16.90625rem;
-      margin-top: -0.25rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 0.25rem;
-      background-color: rgba(0,0,0,0.1);
-      border-left: 0.25rem solid $purple;
-      border-right: 0.25rem solid $purple;
-      border-bottom: 0.25rem solid $purple;
-      border-radius: 0 0 1rem 1rem;
-      box-sizing: border-box;
+  //   section {
+  //     width: 16.90625rem;
+  //     margin-top: -0.25rem;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     padding-bottom: 0.25rem;
+  //     background-color: rgba(0,0,0,0.1);
+  //     border-left: 0.25rem solid $purple;
+  //     border-right: 0.25rem solid $purple;
+  //     border-bottom: 0.25rem solid $purple;
+  //     border-radius: 0 0 1rem 1rem;
+  //     box-sizing: border-box;
 
-      // NOTE: prep test for future structure changes
-      // p {
-      //   font-size: 1rem;
-      //   text-align: center;
-      //   hyphens: unset;
-      //   padding: 0 0.25rem;
-      //   margin-bottom: -0.25rem;
-      // }
-      .logos {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 0.5rem;
+  //     // NOTE: prep test for future structure changes
+  //     // p {
+  //     //   font-size: 1rem;
+  //     //   text-align: center;
+  //     //   hyphens: unset;
+  //     //   padding: 0 0.25rem;
+  //     //   margin-bottom: -0.25rem;
+  //     // }
+  //     .logos {
+  //       width: 100%;
+  //       display: flex;
+  //       justify-content: center;
+  //       margin-top: 0.5rem;
 
-        img {
-          width: 2.25rem;
-          margin: 0.25rem;
-        }
-      }
-    }
+  //       img {
+  //         width: 2.25rem;
+  //         margin: 0.25rem;
+  //       }
+  //     }
+  //   }
 
-    &.effect .info {
-      background-color: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      pointer-events: none;
-      @include transition();
+  //   &.effect .info {
+  //     background-color: rgba(0, 0, 0, 0.6);
+  //     opacity: 0;
+  //     pointer-events: none;
+  //     @include transition();
 
-      .info-back {
-        height: 16.90625rem;
-        // width: 16.90625rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
+  //     .info-back {
+  //       height: 16.90625rem;
+  //       // width: 16.90625rem;
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       margin: 0;
 
-        text-align: center;
-        visibility: hidden;
-        color: #fff;
-        font-style: italic;
-        padding: 0 1rem;
-        hyphens: unset;
-        @include transition();
-      }
-    }
+  //       text-align: center;
+  //       visibility: hidden;
+  //       color: #fff;
+  //       font-style: italic;
+  //       padding: 0 1rem;
+  //       hyphens: unset;
+  //       @include transition();
+  //     }
+  //   }
 
-    &.effect a:hover {
-      text-decoration: none;
+  //   &.effect a:hover {
+  //     text-decoration: none;
 
-      .info {
-        opacity: 1;
-      }
+  //     .info {
+  //       opacity: 1;
+  //     }
 
-      .info-back {
-        visibility: visible;
-      }
-    }
-  }
+  //     .info-back {
+  //       visibility: visible;
+  //     }
+  //   }
+  // }
 
   .retired {
     border-top: 0.25rem solid $purple;
