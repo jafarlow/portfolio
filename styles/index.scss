@@ -701,9 +701,14 @@ section {
 
   .linkout {
     margin-bottom: 1rem;
+
+    img {
+      margin-right: 0.25rem;
+    }
   }
 
-  .linkout, .logo-wrapper {
+  .linkout,
+  .logo-wrapper {
     display: flex;
     align-items: center;
   }
@@ -812,6 +817,7 @@ section {
         
         img {
           width: 2.25rem;
+          height: auto;
           margin: 0.25rem;
         }
         
@@ -823,7 +829,7 @@ section {
             margin-left: 0.25rem;
           }
           p {
-            margin-top: 1rem; // to "undo" the margin setting in .project-info p, as this is needed for vertical centering here
+            margin: 0; // override any other settings which might interfere with vertical centering
           }
         }
       }
@@ -894,15 +900,16 @@ section {
     background-image: url("../public/images/tolkien.png");
   }
 
-  .weather {
-    background-image: url("../public/images/weather-app.png");
-  }
+  // .weather {
+  //   background-image: url("../public/images/weather-app.png");
+  // }
 
   #recipe > img {
     border-left: 2px solid $purple;
   }
 
-  #nature > img {
+  #nature > img,
+  #weather > img {
     border-right: 2px solid $purple;
   }
 }
