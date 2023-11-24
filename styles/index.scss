@@ -904,12 +904,14 @@ section {
   //   background-image: url("../public/images/weather-app.png");
   // }
 
-  #recipe > img {
+  #recipe > img,
+  #tolkien > img {
     border-left: 2px solid $purple;
   }
 
   #nature > img,
-  #weather > img {
+  #weather > img,
+  #rps > img {
     border-right: 2px solid $purple;
   }
 }
