@@ -905,13 +905,15 @@ section {
   // }
 
   #recipe > img,
-  #tolkien > img {
+  #tolkien > img,
+  #collection-builder > img {
     border-left: 2px solid $purple;
   }
 
   #nature > img,
   #weather > img,
-  #rps > img {
+  #rps > img,
+  #readers-wishlist > img {
     border-right: 2px solid $purple;
   }
 }
