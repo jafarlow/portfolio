@@ -195,7 +195,7 @@ section {
       align-self: end;
       font-size: 1rem;
       hyphens: none;
-      overflow: scroll; }
+      overflow: clip; }
     .icons-wrapper svg:hover, .icons-wrapper .svg:hover {
       transform: scale(1.25); }
   .icons-wrapper .appcenter {

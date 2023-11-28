@@ -330,7 +330,7 @@ section {
       align-self: end;
       font-size: 1rem;
       hyphens: none;
-      overflow: scroll;
+      overflow: clip;
     }
 
     &:hover {
