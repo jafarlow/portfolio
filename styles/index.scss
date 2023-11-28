@@ -330,6 +330,7 @@ section {
       align-self: end;
       font-size: 1rem;
       hyphens: none;
+      overflow: scroll;
     }
 
     &:hover {
@@ -407,8 +408,8 @@ section {
       background-color: $express;
       padding: 0.5rem;
       border-radius: 0.5rem;
+      box-sizing: border-box;
     }
-
   }
 
   #express {
@@ -674,6 +675,8 @@ section {
   // margin-bottom: 3rem;
   display: grid;
   gap: 1rem;
+  max-width: 1075px;
+  margin: 0 auto;
 
   .project-wrapper {
     display: flex;
@@ -816,18 +819,17 @@ section {
         // grid-template-columns: repeat(3, minmax(33%, 1fr));
         
         img {
-          width: 2.25rem;
           height: auto;
-          margin: 0.25rem;
+          margin: 0 0.25rem;
         }
         
         .logo-wrapper {
           margin-right: 0.25rem;
           
-          &:last-child {
-            margin-right: 0;
-            margin-left: 0.25rem;
-          }
+          // &:last-child {
+          //   margin-right: 0;
+          //   margin-left: 0.25rem;
+          // }
           p {
             margin: 0; // override any other settings which might interfere with vertical centering
           }
@@ -988,6 +990,38 @@ footer {
 
 /* MEDIA QUERIES */
 
+// 1136px
+@media only screen and (max-width: 71rem) {
+  main {
+    width: 53.125rem; // 850px
+  }
+
+  .project-overview {
+    .project-screenshot {
+      max-width: 50%;
+      height: max-content;
+    }
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    .project-info {
+      margin: 0 1rem;
+
+      img {
+        width: 24px;
+      }
+
+      .linkout-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+// 875px
 @media only screen and (max-width: 54.6875rem) {
   main {
     width: 100%;
@@ -997,38 +1031,71 @@ footer {
     font-size: 4rem;
   }
 
-  .icons-wrapper .svg {
-    width: 5.25rem;
-    margin: 1.25rem;
-
-    figcaption {
-      font-size: 1rem;
-      // word-wrap: break-word;
-    }
+  p, ul, .link {
+    font-size: 1rem;
   }
+
+  // .icons-wrapper .svg {
+  //   width: 5.25rem;
+  //   margin: 1.25rem;
+  // }
 
   .section-head {
     margin-top: 3rem;
   }
 
   .profile-img {
-    max-width: 28.125rem;
+    max-width: 28.125rem; // 450px
     height: auto;
   }
-}
 
-@media only screen and (max-width: 68rem) {
-  main {
-    width: 53.125rem;
+  .project-overview {
+    margin: 0 1rem;
+    .project-screenshot {
+      width: 375px; // FIX @ 790px & smaller!
+      // max-width: 50%;
+    }
   }
 }
 
-@media only screen and (max-width: 53.125rem) {
-  main {
-    width: 48.125rem;
+// 790px
+@media only screen and (max-width: 49.375rem) {
+  .project-overview {
+    // margin: 0 auto;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+
+    .project-wrapper {
+      flex-direction: column;
+    }
+
+    .project-screenshot {
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    #recipe > img,
+    #tolkien > img,
+    #collection-builder > img {
+      border-left: none;
+      border-top: 2px solid $purple;
+    }
+  
+    #nature > img,
+    #weather > img,
+    #rps > img,
+    #readers-wishlist > img,
+    #tic-tac-toe > img {
+      border-right: none;
+      border-bottom: 2px solid $purple;
+    }
+
+    .logos {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
+// 768px
 @media only screen and (max-width: 48rem) {
   main {
     width: 100vw;
@@ -1038,32 +1105,8 @@ footer {
     display: none;
   }
 
-  .project-overview {
-    .projects {
-      // this is 85% of the previous width/height
-      // width: 18.59375rem;
-      // height: 18.59375rem;
-
-      .repo-container {
-        width: 100%;
-      }
-
-      &.effect .info {
-        opacity: 0.75;
-
-        .info-back {
-          // width: 18.59375rem;
-          // height: 18.59375rem;
-          font-weight: bold;
-          visibility: visible;
-        }
-
-        .logos {
-          padding-top: 2rem;
-          margin-bottom: 0;
-        }
-      }
-    }
+  .icons-wrapper .svg {
+    margin: 0.5rem;
   }
 }
 
@@ -1118,8 +1161,9 @@ footer {
   }
 
   .icons-wrapper .svg {
-    // width: 3.5rem;
-    margin: .5rem;
+    width: 5.5rem;
+    // margin: .5rem;
+    font-size: 0.75rem;
   }
 
   p, ul {
