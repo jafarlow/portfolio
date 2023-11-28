@@ -139,8 +139,6 @@ section {
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem; }
-  .about-paragraph:nth-of-type(6n) {
-    margin-bottom: 0; }
 
 .link {
   text-decoration: underline;
@@ -196,7 +194,8 @@ section {
       padding: 4px;
       align-self: end;
       font-size: 1rem;
-      hyphens: none; }
+      hyphens: none;
+      overflow: scroll; }
     .icons-wrapper svg:hover, .icons-wrapper .svg:hover {
       transform: scale(1.25); }
   .icons-wrapper .appcenter {
@@ -239,7 +238,8 @@ section {
     .icons-wrapper .express img {
       background-color: #333333;
       padding: 0.5rem;
-      border-radius: 0.5rem; }
+      border-radius: 0.5rem;
+      box-sizing: border-box; }
   .icons-wrapper #express {
     background-color: #333333;
     color: white; }
@@ -385,108 +385,53 @@ section {
   margin: 1rem; }
 
 .project-overview {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 3rem; }
+  display: grid;
+  gap: 1rem;
+  max-width: 1075px;
+  margin: 0 auto; }
   .project-overview .project-wrapper {
-    margin-bottom: 6rem;
-    width: 16.90625rem; }
-    .project-overview .project-wrapper h4 {
-      margin-bottom: 1rem; }
-    .project-overview .project-wrapper .learning {
-      margin: 0;
-      padding: 0.5rem;
-      text-align: justify;
-      min-height: 5.375rem;
-      border-top: 0.25rem solid #522D80;
-      border-right: 0.25rem solid #522D80;
-      border-left: 0.25rem solid #522D80;
-      width: 16.90625rem;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.1); }
-      .project-overview .project-wrapper .learning p {
-        margin: 0; }
+    display: flex;
+    box-sizing: border-box;
+    border-top: 0.25rem solid #522D80;
+    border-bottom: 0.25rem solid #522D80;
+    border-right: 0.25rem solid #522D80;
+    border-left: 0.25rem solid #522D80;
+    border-radius: 0.5rem;
+    background-color: #d3d3d3; }
+  .project-overview .project-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 600px; }
+    .project-overview .project-info p {
+      margin-top: 0; }
+    .project-overview .project-info .tech-used {
+      margin-bottom: 0; }
+  .project-overview .linkout {
+    margin-bottom: 1rem; }
+    .project-overview .linkout img {
+      margin-right: 0.25rem; }
+  .project-overview .linkout,
+  .project-overview .logo-wrapper {
+    display: flex;
+    align-items: center; }
   .project-overview h4 {
     font-size: 1.25rem;
     margin-top: 1rem;
     color: #522D80;
     text-decoration: underline;
     text-decoration-color: #F66733; }
-  .project-overview .projects {
+  .project-overview .logos {
+    width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 16.90625rem;
-    height: 16.90625rem;
-    border-top: 0.125rem solid #522D80;
-    border-bottom: 0.125rem solid #522D80;
-    border-right: 0.25rem solid #522D80;
-    border-left: 0.25rem solid #522D80;
-    background-size: cover;
-    box-sizing: border-box; }
-    .project-overview .projects a {
-      width: 16.90625rem; }
-    .project-overview .projects .repo-container {
-      width: 100%;
-      font-weight: bold;
-      display: flex;
-      justify-content: center; }
-      .project-overview .projects .repo-container a {
-        text-align: center; }
-    .project-overview .projects section {
-      width: 16.90625rem;
-      margin-top: -0.25rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 0.25rem;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-left: 0.25rem solid #522D80;
-      border-right: 0.25rem solid #522D80;
-      border-bottom: 0.25rem solid #522D80;
-      border-radius: 0 0 1rem 1rem;
-      box-sizing: border-box; }
-      .project-overview .projects section .logos {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 0.5rem; }
-        .project-overview .projects section .logos img {
-          width: 2.25rem;
-          margin: 0.25rem; }
-    .project-overview .projects.effect .info {
-      background-color: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      pointer-events: none;
-      -webkit-transition: all 0.35s ease-in-out;
-      -moz-transition: all 0.35s ease-in-out;
-      transition: all 0.35s ease-in-out; }
-      .project-overview .projects.effect .info .info-back {
-        height: 16.90625rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        text-align: center;
-        visibility: hidden;
-        color: #fff;
-        font-style: italic;
-        padding: 0 1rem;
-        hyphens: unset;
-        -webkit-transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        transition: all 0.35s ease-in-out; }
-    .project-overview .projects.effect a:hover {
-      text-decoration: none; }
-      .project-overview .projects.effect a:hover .info {
-        opacity: 1; }
-      .project-overview .projects.effect a:hover .info-back {
-        visibility: visible; }
-  .project-overview .retired {
-    border-top: 0.25rem solid #522D80; }
+    flex-wrap: wrap; }
+    .project-overview .logos img {
+      height: auto;
+      margin: 0 0.25rem; }
+    .project-overview .logos .logo-wrapper {
+      margin-right: 0.25rem; }
+      .project-overview .logos .logo-wrapper p {
+        margin: 0; }
   .project-overview .tic-tac-toe {
     background-image: url("../public/images/tic-tac-toe.png"); }
   .project-overview .collection-builder {
@@ -499,12 +444,16 @@ section {
     background-image: url("../public/images/rock-paper-scissors.png"); }
   .project-overview .tolkien {
     background-image: url("../public/images/tolkien.png"); }
-  .project-overview .weather {
-    background-image: url("../public/images/weather-app.png"); }
-  .project-overview .recipe {
-    background-image: url("../public/images/recipe.png"); }
-  .project-overview .nature {
-    background-image: url("../public/images/jf-nature.png"); }
+  .project-overview #recipe > img,
+  .project-overview #tolkien > img,
+  .project-overview #collection-builder > img {
+    border-left: 2px solid #522D80; }
+  .project-overview #nature > img,
+  .project-overview #weather > img,
+  .project-overview #rps > img,
+  .project-overview #readers-wishlist > img,
+  .project-overview #tic-tac-toe > img {
+    border-right: 2px solid #522D80; }
 
 /* CONTACT INFO SECTION */
 .contact {
@@ -550,45 +499,90 @@ footer {
       text-decoration: none; }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 71rem) {
+  main {
+    width: 53.125rem; }
+  .project-overview .project-screenshot {
+    max-width: 50%;
+    height: max-content; }
+  .project-overview h4 {
+    margin-bottom: 1rem; }
+  .project-overview .project-info {
+    margin: 0 1rem; }
+    .project-overview .project-info img {
+      width: 24px; }
+    .project-overview .project-info .linkout-wrapper {
+      display: flex;
+      justify-content: space-evenly; } }
+
 @media only screen and (max-width: 54.6875rem) {
   main {
     width: 100%; }
   h1 {
     font-size: 4rem; }
-  .icons-wrapper .svg {
-    width: 5.25rem;
-    margin: 1.25rem; }
-    .icons-wrapper .svg figcaption {
-      font-size: 1rem; }
+  p, ul, .link {
+    font-size: 1rem; }
   .section-head {
     margin-top: 3rem; }
   .profile-img {
     max-width: 28.125rem;
-    height: auto; } }
+    height: auto; }
+  .project-overview {
+    margin: 0 1rem; }
+    .project-overview .project-screenshot {
+      width: 375px; } }
 
-@media only screen and (max-width: 68rem) {
-  main {
-    width: 53.125rem; } }
-
-@media only screen and (max-width: 53.125rem) {
-  main {
-    width: 48.125rem; } }
+@media only screen and (max-width: 49.375rem) {
+  .active-projects {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .project-overview .project-wrapper {
+    flex-direction: column; }
+  .project-overview .project-info {
+    order: 2; }
+  .project-overview .project-screenshot {
+    max-width: 100%;
+    width: 100%; }
+  .project-overview #recipe > img,
+  .project-overview #tolkien > img,
+  .project-overview #collection-builder > img {
+    border-left: none;
+    border-bottom: 2px solid #522D80;
+    order: 1; }
+  .project-overview #nature > img,
+  .project-overview #weather > img,
+  .project-overview #rps > img,
+  .project-overview #readers-wishlist > img,
+  .project-overview #tic-tac-toe > img {
+    border-right: none;
+    border-bottom: 2px solid #522D80; }
+  .project-overview .logos {
+    margin-bottom: 0.5rem; }
+  .retired .project-wrapper {
+    flex-direction: row; }
+  .retired #readers-wishlist > img,
+  .retired #collection-builder > img,
+  .retired #tic-tac-toe > img {
+    border-right: 2px solid #522D80;
+    border-bottom: none; }
+  .retired .project-info .linkout-wrapper {
+    flex-direction: column; }
+    .retired .project-info .linkout-wrapper .linkout {
+      margin-bottom: 0.5rem; }
+  .retired .project-info .tech-used {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem; } }
 
 @media only screen and (max-width: 48rem) {
   main {
     width: 100vw; }
   .header-subtext {
     display: none; }
-  .project-overview .projects .repo-container {
-    width: 100%; }
-  .project-overview .projects.effect .info {
-    opacity: 0.75; }
-    .project-overview .projects.effect .info .info-back {
-      font-weight: bold;
-      visibility: visible; }
-    .project-overview .projects.effect .info .logos {
-      padding-top: 2rem;
-      margin-bottom: 0; } }
+  .icons-wrapper .svg {
+    margin: 0.5rem; } }
+
+@media only screen and (max-width: 45.9375rem) {
+  .retired-screenshot {
+    display: none; } }
 
 @media only screen and (max-width: 35.9375rem) {
   header .header-text {
@@ -614,7 +608,9 @@ footer {
   .profile-img {
     max-width: 21.875rem; }
   .icons-wrapper .svg {
-    margin: .5rem; }
+    width: 5.5rem; }
+    .icons-wrapper .svg figcaption {
+      font-size: 0.875rem; }
   p, ul {
     font-size: 1rem; }
   ul {
@@ -622,3 +618,12 @@ footer {
     margin-left: 0.5rem; }
   .link {
     font-size: 1rem; } }
+
+@media only screen and (max-width: 29.6875rem) {
+  .project-overview .project-info .linkout-wrapper {
+    flex-direction: column; }
+    .project-overview .project-info .linkout-wrapper .linkout {
+      margin-bottom: 0.5rem; }
+  .project-overview .project-info .tech-used {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem; } }
