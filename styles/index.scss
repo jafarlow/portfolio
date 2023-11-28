@@ -681,7 +681,7 @@ section {
   .project-wrapper {
     display: flex;
     // flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     box-sizing: border-box;
     border-top: 0.25rem solid $purple;
     border-bottom: 0.25rem solid $purple;
@@ -699,6 +699,10 @@ section {
 
     p {
       margin-top: 0; // to force margin collapsing within flex
+    }
+
+    .tech-used {
+      margin-bottom: 0;
     }
   }
 
@@ -751,10 +755,6 @@ section {
     color: $purple;
     text-decoration: underline;
     text-decoration-color: $orange;
-  }
-
-  .tech-used {
-    margin-bottom: 0;
   }
 
   // .projects {
@@ -874,9 +874,9 @@ section {
   //   }
   // }
 
-  .retired {
-    border-top: 0.25rem solid $purple;
-  };
+  // .retired {
+  //   border-top: 0.25rem solid $purple;
+  // };
 
   .tic-tac-toe {
     background-image: url("../public/images/tic-tac-toe.png");
@@ -1060,12 +1060,19 @@ footer {
 
 // 790px
 @media only screen and (max-width: 49.375rem) {
+  .active-projects {
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  }
+
   .project-overview {
     // margin: 0 auto;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
 
     .project-wrapper {
       flex-direction: column;
+    }
+
+    .project-info {
+      order: 2;
     }
 
     .project-screenshot {
@@ -1077,7 +1084,8 @@ footer {
     #tolkien > img,
     #collection-builder > img {
       border-left: none;
-      border-top: 2px solid $purple;
+      border-bottom: 2px solid $purple;
+      order: 1;
     }
   
     #nature > img,
@@ -1091,6 +1099,34 @@ footer {
 
     .logos {
       margin-bottom: 0.5rem;
+    }
+  }
+
+  .retired {
+    .project-wrapper {
+      flex-direction: row;
+    }
+
+    #readers-wishlist > img,
+    #collection-builder > img,
+    #tic-tac-toe > img {
+      border-right: 2px solid $purple;
+      border-bottom: none;
+    }
+
+    .project-info {
+      .linkout-wrapper {
+        flex-direction: column;
+  
+        .linkout {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .tech-used {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
     }
   }
 }
@@ -1107,6 +1143,13 @@ footer {
 
   .icons-wrapper .svg {
     margin: 0.5rem;
+  }
+}
+
+// 735px
+@media only screen and (max-width: 45.9375rem) {
+  .retired-screenshot {
+    display: none;
   }
 }
 
@@ -1162,8 +1205,10 @@ footer {
 
   .icons-wrapper .svg {
     width: 5.5rem;
-    // margin: .5rem;
-    font-size: 0.75rem;
+    
+    figcaption {
+      font-size: 0.875rem;
+    }
   }
 
   p, ul {
@@ -1177,5 +1222,25 @@ footer {
 
   .link {
     font-size: 1rem;
+  }
+}
+
+// 475px
+@media only screen and (max-width: 29.6875rem) {
+  .project-overview {
+    .project-info {
+      .linkout-wrapper {
+        flex-direction: column;
+
+        .linkout {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .tech-used {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+    }
   }
 }
