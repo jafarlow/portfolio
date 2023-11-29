@@ -34,8 +34,6 @@ h2, h3, h4 {
 p, ul, figcaption {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto; }
 
 ul {
@@ -432,18 +430,6 @@ section {
       margin-right: 0.25rem; }
       .project-overview .logos .logo-wrapper p {
         margin: 0; }
-  .project-overview .tic-tac-toe {
-    background-image: url("../public/images/tic-tac-toe.png"); }
-  .project-overview .collection-builder {
-    background-image: url("../public/images/collection-builder.png"); }
-  .project-overview .would-you-rather {
-    background-image: url("../public/images/would-you-rather.png"); }
-  .project-overview .readers-wishlist {
-    background-image: url("../public/images/readers-wishlist.png"); }
-  .project-overview .rps {
-    background-image: url("../public/images/rock-paper-scissors.png"); }
-  .project-overview .tolkien {
-    background-image: url("../public/images/tolkien.png"); }
   .project-overview #recipe > img,
   .project-overview #tolkien > img,
   .project-overview #collection-builder > img {

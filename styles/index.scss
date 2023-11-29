@@ -1,4 +1,4 @@
-// @import '~bootstrap/scss/bootstrap';
+// site theme colors
 $purple: #522D80;
 $orange: #F66733;
 $light-gray: #d3d3d3;
@@ -69,11 +69,6 @@ body, html {
   margin: 0;
   background-color: $white-gray;
   scroll-padding-top: 6rem;
-  // load the system defaults first -- lowest jank on ubuntu systems
-  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  //            'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-  //            'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  //            sans-serif;
 }
 
 main {
@@ -99,9 +94,6 @@ h2, h3, h4 {
 p, ul, figcaption {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
-  // Safari--IE/Edge--Chrome/Firefox hyphenation
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto;
 }
 
@@ -150,7 +142,6 @@ nav {
     width: 100%;
     display: inline-flex;
     justify-content: flex-end;
-    // margin-bottom: 0;
   }
 
   li {
@@ -214,8 +205,6 @@ nav {
   border: 0.25rem solid $purple;
   border-radius: 3.125rem;
   margin: 2rem auto;
-  // box-shadow: 1rem 1rem 1.25rem #666;
-  // content: url("../public/images/jacob-min.jpg");
 }
 
 section {
@@ -245,11 +234,6 @@ section {
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem;
-
-  // this is for the "Currently Reading" part
-  // &:nth-of-type(6n) {
-  //   margin-bottom: 0;
-  // }
 }
 
 .link {
@@ -669,10 +653,6 @@ section {
 }
 
 .project-overview {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-around;
-  // margin-bottom: 3rem;
   display: grid;
   gap: 1rem;
   max-width: 1075px;
@@ -680,8 +660,6 @@ section {
 
   .project-wrapper {
     display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
     box-sizing: border-box;
     border-top: 0.25rem solid $purple;
     border-bottom: 0.25rem solid $purple;
@@ -720,35 +698,6 @@ section {
     align-items: center;
   }
 
-  // ! LEGACY CSS CODE -- Need to shift this to a section for the retired projects, if I want to keep it
-  // .project-wrapper {
-  //   margin-bottom: 6rem;
-  //   width: 16.90625rem;
-
-  //   h4 {
-  //     margin-bottom: 1rem;
-  //   }
-    
-  //   .learning {
-  //     margin: 0;
-  //     padding: 0.5rem;
-  //     text-align: justify;
-  //     min-height: 5.375rem;
-  //     border-top: 0.25rem solid $purple;
-  //     border-right: 0.25rem solid $purple;
-  //     border-left: 0.25rem solid $purple;
-  //     width: 16.90625rem;
-  //     box-sizing: border-box;
-  //     display: flex;
-  //     align-items: center;
-  //     background-color: rgba(0,0,0,0.1);
-
-  //     p {
-  //       margin: 0;
-  //     }
-  //   }
-  // }
-
   h4 {
     font-size: 1.25rem;
     margin-top: 1rem;
@@ -757,154 +706,24 @@ section {
     text-decoration-color: $orange;
   }
 
-  // .projects {
-  //   display: flex;
-  //   align-items: center;
-  //   flex-direction: column;
-  //   width: 16.90625rem;
-  //   height: 16.90625rem;
-  //   border-top: 0.125rem solid $purple;
-  //   border-bottom: 0.125rem solid $purple;
-  //   border-right: 0.25rem solid $purple;
-  //   border-left: 0.25rem solid $purple;
-  //   background-size: cover;
-  //   box-sizing: border-box;
-
-  //   // so the background hover effect will remain within the box
-  //   a {
-  //     width: 16.90625rem;
-  //   }
-
-  //   .repo-container {
-  //     width: 100%;
-  //     font-weight: bold;
-  //     display: flex;
-  //     justify-content: center;
-
-  //     a {
-  //       text-align: center;
-  //     }
-  //   }
-
-  //   section {
-  //     width: 16.90625rem;
-  //     margin-top: -0.25rem;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     padding-bottom: 0.25rem;
-  //     background-color: rgba(0,0,0,0.1);
-  //     border-left: 0.25rem solid $purple;
-  //     border-right: 0.25rem solid $purple;
-  //     border-bottom: 0.25rem solid $purple;
-  //     border-radius: 0 0 1rem 1rem;
-  //     box-sizing: border-box;
-
-  //     // NOTE: prep test for future structure changes
-  //     // p {
-  //     //   font-size: 1rem;
-  //     //   text-align: center;
-  //     //   hyphens: unset;
-  //     //   padding: 0 0.25rem;
-  //     //   margin-bottom: -0.25rem;
-  //     // }
-      .logos {
-        width: 100%;
-        // display: grid;
-        display: flex;
-        flex-wrap: wrap;
-        // justify-content: center;
-        // align-items: center;
-        // margin-top: 0.5rem;
-        // grid-template-columns: repeat(3, minmax(33%, 1fr));
-        
-        img {
-          height: auto;
-          margin: 0 0.25rem;
-        }
-        
-        .logo-wrapper {
-          margin-right: 0.25rem;
-          
-          // &:last-child {
-          //   margin-right: 0;
-          //   margin-left: 0.25rem;
-          // }
-          p {
-            margin: 0; // override any other settings which might interfere with vertical centering
-          }
-        }
+  .logos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    img {
+      height: auto;
+      margin: 0 0.25rem;
+    }
+    
+    .logo-wrapper {
+      margin-right: 0.25rem;
+      
+      p {
+        margin: 0; // override any other settings which might interfere with vertical centering
       }
-  //   }
-
-  //   &.effect .info {
-  //     background-color: rgba(0, 0, 0, 0.6);
-  //     opacity: 0;
-  //     pointer-events: none;
-  //     @include transition();
-
-  //     .info-back {
-  //       height: 16.90625rem;
-  //       // width: 16.90625rem;
-  //       display: flex;
-  //       flex-direction: column;
-  //       justify-content: center;
-  //       margin: 0;
-
-  //       text-align: center;
-  //       visibility: hidden;
-  //       color: #fff;
-  //       font-style: italic;
-  //       padding: 0 1rem;
-  //       hyphens: unset;
-  //       @include transition();
-  //     }
-  //   }
-
-  //   &.effect a:hover {
-  //     text-decoration: none;
-
-  //     .info {
-  //       opacity: 1;
-  //     }
-
-  //     .info-back {
-  //       visibility: visible;
-  //     }
-  //   }
-  // }
-
-  // .retired {
-  //   border-top: 0.25rem solid $purple;
-  // };
-
-  .tic-tac-toe {
-    background-image: url("../public/images/tic-tac-toe.png");
+    }
   }
-
-  .collection-builder {
-    background-image: url("../public/images/collection-builder.png");
-  }
-
-  .would-you-rather {
-    background-image: url("../public/images/would-you-rather.png");
-  }
-
-  .readers-wishlist {
-    background-image: url("../public/images/readers-wishlist.png");
-  }
-
-  .rps {
-    background-image: url("../public/images/rock-paper-scissors.png");
-  }
-
-  .tolkien {
-    background-image: url("../public/images/tolkien.png");
-  }
-
-  // .weather {
-  //   background-image: url("../public/images/weather-app.png");
-  // }
 
   #recipe > img,
   #tolkien > img,
@@ -1035,11 +854,6 @@ footer {
     font-size: 1rem;
   }
 
-  // .icons-wrapper .svg {
-  //   width: 5.25rem;
-  //   margin: 1.25rem;
-  // }
-
   .section-head {
     margin-top: 3rem;
   }
@@ -1052,8 +866,7 @@ footer {
   .project-overview {
     margin: 0 1rem;
     .project-screenshot {
-      width: 375px; // FIX @ 790px & smaller!
-      // max-width: 50%;
+      width: 375px;
     }
   }
 }
@@ -1065,8 +878,6 @@ footer {
   }
 
   .project-overview {
-    // margin: 0 auto;
-
     .project-wrapper {
       flex-direction: column;
     }
