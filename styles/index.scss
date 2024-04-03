@@ -79,9 +79,13 @@ main {
 h1 {
   font-family: "Signature", cursive;
   font-size: 4.5rem;
-  color: $white-gray;
+  // color: $white-gray;
   margin: 0;
   margin-bottom: 1rem;
+
+  // ! TINKERING WITH NEW LAYOUT
+  margin-top: 5rem;
+  color: $purple;
 }
 
 h2, h3, h4 {
