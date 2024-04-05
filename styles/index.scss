@@ -76,7 +76,7 @@ main {
   margin: 0 auto;
 }
 
-h1 {
+.signature {
   font-family: "Signature", cursive;
   font-size: 4.5rem;
   // color: $white-gray;
@@ -125,6 +125,8 @@ h1 {
   top: 0;
   opacity: 0;
   animation: display 30s infinite;
+  box-sizing: border-box;
+  border: solid 0.175rem $purple;
 }
 
 img:nth-child(1) {
@@ -145,7 +147,7 @@ img:nth-child(5) {
 
 //!
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   text-align: center;
   font-size: 1.75rem;
   font-weight: bold;
@@ -208,14 +210,24 @@ nav {
   li {
     list-style: none;
     margin-right: 2rem;
+  }
 
-    a {
-      color: $white-gray;
+  a {
+    color: $white-gray;
 
-      &:hover {
-        color: $orange;
-        text-decoration: none;
-      }
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+
+  .current-page {
+    color: #F66733;
+    text-decoration: none;
+
+    &:hover {
+      //* NOTE: scss requires a %val to be included here, whereas plain CSS defaults to 100% if no args passed 
+      filter: invert(100%);
     }
   }
 }
