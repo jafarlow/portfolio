@@ -154,7 +154,7 @@ h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
 }
 
-p, ul, figcaption, span {
+a, p, ul, figcaption, span {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   hyphens: auto;
@@ -859,48 +859,67 @@ footer {
   height: 10rem;
   color: $white-gray;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .footer-section {
-    margin-top: 3rem;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // p {
+    // }
+  }
+  
+  .footer-text {
+    margin: 0 0 0 1rem;
+    // font-weight: bold;
+  }
+
+  .footer-icon {
+    margin-right: 1rem;
+    color: $white-gray;
+  }
+
+  svg {
+    width: 2rem;
+    fill: $white-gray;
+
+    // &:hover {
+    //   fill: $orange;
+    // }
+  }
+
+  .footer-link {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 
-    p {
-      margin: 0;
-      font-weight: bold;
-    }
-
-    .footer-icon {
-      margin: 0 1rem 0 1rem;
+    a {
       color: $white-gray;
-
-      svg {
-        width: 2rem;
-        fill: $white-gray;
-
-        &:hover {
-          fill: $orange;
-        }
+      &:hover {
+        color: $orange;
       }
     }
   }
 
-  #credit {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
+  // #credit {
+  //   text-align: center;
+  //   font-size: 1rem;
+  //   margin-top: 0.5rem;
+  // }
 
-  #devicon {
-    color: $white-gray;
-    text-decoration: underline;
+  // #devicon {
+  //   color: $white-gray;
+  //   text-decoration: underline;
 
-    &:hover {
-      color: $orange;
-      text-decoration: none;
-    }
-  }
+  //   &:hover {
+  //     color: $orange;
+  //     text-decoration: none;
+  //   }
+  // }
 }
 
 /* MEDIA QUERIES */
