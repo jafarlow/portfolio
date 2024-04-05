@@ -76,17 +76,17 @@ main {
   margin: 0 auto;
 }
 
-.signature {
-  font-family: "Signature", cursive;
-  font-size: 4.5rem;
-  // color: $white-gray;
-  margin: 0;
-  margin-bottom: 1rem;
+// .signature {
+//   font-family: "Signature", cursive;
+//   font-size: 4.5rem;
+//   // color: $white-gray;
+//   margin: 0;
+//   margin-bottom: 1rem;
 
-  // ! TINKERING WITH NEW LAYOUT
-  margin-top: 5rem;
-  color: $purple;
-}
+//   // ! TINKERING WITH NEW LAYOUT
+//   margin-top: 5rem;
+//   color: $purple;
+// }
 
 //!
 
@@ -154,7 +154,7 @@ h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
 }
 
-p, ul, figcaption {
+p, ul, figcaption, span {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   hyphens: auto;
@@ -232,6 +232,28 @@ nav {
   }
 }
 
+.headline {
+  margin-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .signature {
+    font-family: "Signature", cursive;
+    font-size: 6rem;
+    margin: 0;
+    color: $purple;
+  }
+
+  p {
+    margin-top: 0; // to support margin collapse in flex
+  }
+}
+
+.featured-tech {
+  justify-content: center;
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -288,7 +310,7 @@ section {
   color: $purple;
   text-decoration: underline;
   text-decoration-color: $orange;
-  margin-top: 4rem;
+  // margin-top: 4rem;
 }
 
 /* ABOUT ME SECTION */
@@ -730,46 +752,24 @@ section {
   gap: 1rem;
   max-width: 1075px;
   margin: 0 auto;
+}
 
-  .project-wrapper {
-    display: flex;
-    box-sizing: border-box;
-    border-top: 0.25rem solid $purple;
-    border-bottom: 0.25rem solid $purple;
-    border-right: 0.25rem solid $purple;
-    border-left: 0.25rem solid $purple;
-    border-radius: 0.5rem;
-    background-color: $light-gray;
-  }
+.project-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  border-top: 0.25rem solid $purple;
+  border-bottom: 0.25rem solid $purple;
+  border-right: 0.25rem solid $purple;
+  border-left: 0.25rem solid $purple;
+  border-radius: 0.5rem;
+  background-color: $light-gray;
+}
 
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 600px;
-
-    p {
-      margin-top: 0; // to force margin collapsing within flex
-    }
-
-    .tech-used {
-      margin-bottom: 0;
-    }
-  }
-
-  .linkout {
-    margin-bottom: 1rem;
-
-    img {
-      margin-right: 0.25rem;
-    }
-  }
-
-  .linkout,
-  .logo-wrapper {
-    display: flex;
-    align-items: center;
-  }
+.project-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 600px;
 
   h4 {
     font-size: 1.25rem;
@@ -779,38 +779,61 @@ section {
     text-decoration-color: $orange;
   }
 
-  .logos {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    
-    img {
-      height: auto;
-      margin: 0 0.25rem;
-    }
-    
-    .logo-wrapper {
-      margin-right: 0.25rem;
-      
-      p {
-        margin: 0; // override any other settings which might interfere with vertical centering
-      }
-    }
+  p {
+    margin-top: 0; // to force margin collapsing within flex
   }
 
-  #recipe > img,
-  #tolkien > img,
-  #collection-builder > img {
-    border-left: 2px solid $purple;
+  .tech-used {
+    margin-bottom: 0;
   }
+} 
 
-  #nature > img,
-  #weather > img,
-  #rps > img,
-  #readers-wishlist > img,
-  #tic-tac-toe > img {
-    border-right: 2px solid $purple;
+.linkout {
+  margin-bottom: 1rem;
+
+  img {
+    margin-right: 0.25rem;
   }
+}
+
+.linkout,
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  img {
+    height: auto;
+    margin: 0 0.25rem;
+  }
+  
+  .logo-wrapper {
+    margin-right: 0.25rem;
+    
+    p {
+      margin: 0; // override any other settings which might interfere with vertical centering
+    }
+  }
+}
+
+#recipe > img,
+#tolkien > img,
+#collection-builder > img {
+  border-left: 2px solid $purple;
+}
+
+#nature > img,
+#weather > img,
+#rps > img,
+#readers-wishlist > img,
+#tic-tac-toe > img {
+  border-right: 2px solid $purple;
 }
 
 /* CONTACT INFO SECTION */
