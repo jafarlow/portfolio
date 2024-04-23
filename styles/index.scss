@@ -855,6 +855,28 @@ section {
   }
 }
 
+.testimonial-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 2rem;
+}
+
+.testimonial {
+  //! FOR LAYOUT PURPOSES ONLY -- DO NOT USE A BORDER IN PROD
+  border: 0.2rem solid $orange;
+}
+
+blockquote {
+  margin: 0;
+  font-style: italic;
+}
+
+.wide {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .quote-cite {
   background-color: $purple;
   color: $white-gray;
