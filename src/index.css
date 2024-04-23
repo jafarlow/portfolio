@@ -520,6 +520,12 @@ section {
   .contact-text {
     margin-top: 1.5rem; }
 
+.quote-cite {
+  background-color: #522D80;
+  color: #f3f3f3;
+  border-top: 0.2rem solid #F66733;
+  padding-left: 1rem; }
+
 /* FOOTER */
 footer {
   border-top: 0.2rem solid #F66733;
