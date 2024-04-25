@@ -1011,10 +1011,6 @@ footer {
     width: 100%;
   }
 
-  h1 {
-    font-size: 4rem;
-  }
-
   p, ul, .link {
     font-size: 1rem;
   }
@@ -1136,6 +1132,12 @@ footer {
       margin-left: 1rem;
     }
   }
+
+  .testimonial-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+  }
 }
 
 // 550px
@@ -1151,9 +1153,18 @@ footer {
   ul {
     margin-left: 0;
   }
+}
 
-  h1 {
-    font-size: 3.5rem;
+@media only screen and (max-width: 31.25rem) {
+  nav {
+    ul {
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 0;
+    }
   }
 }
 
