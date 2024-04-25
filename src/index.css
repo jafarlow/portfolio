@@ -524,10 +524,12 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  column-gap: 2rem; }
+  column-gap: 2rem;
+  row-gap: 1rem; }
 
 .testimonial {
-  border: 0.2rem solid #F66733; }
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: linear-gradient(178deg, #F66733, rgba(246, 103, 51, 0) 10%); }
 
 blockquote {
   margin: 0;
@@ -537,11 +539,17 @@ blockquote {
   grid-column-start: 1;
   grid-column-end: 3; }
 
+.quote {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
 .quote-cite {
   background-color: #522D80;
   color: #f3f3f3;
   border-top: 0.2rem solid #F66733;
-  padding-left: 1rem; }
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  margin-bottom: 0;
+  border-radius: 0 0 0.5rem 0.5rem; }
 
 /* FOOTER */
 footer {

@@ -861,11 +861,16 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
   column-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .testimonial {
   //! FOR LAYOUT PURPOSES ONLY -- DO NOT USE A BORDER IN PROD
-  border: 0.2rem solid $orange;
+  // border: 0.2rem solid $orange;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background:
+    linear-gradient(178deg,
+      $orange, rgba(246, 103, 51, 0) 10%),
 }
 
 blockquote {
@@ -878,11 +883,18 @@ blockquote {
   grid-column-end: 3;
 }
 
+.quote {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .quote-cite {
   background-color: $purple;
   color: $white-gray;
   border-top: 0.2rem solid $orange;
-  padding-left: 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  margin-bottom: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 /* FOOTER */
