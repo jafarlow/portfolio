@@ -840,7 +840,7 @@ section {
 
 .contact {
   // height: 100vh;
-  margin-top: 6.5rem;
+  // margin-top: 6.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -856,6 +856,12 @@ section {
   }
 }
 
+/* TESTIMONIAL SECTION */
+
+#testimonial-header {
+  margin-top: 6.5rem;
+}
+
 .testimonial-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -868,9 +874,7 @@ section {
   //! FOR LAYOUT PURPOSES ONLY -- DO NOT USE A BORDER IN PROD
   // border: 0.2rem solid $orange;
   border-radius: 0.5rem 0.5rem 0 0;
-  background:
-    linear-gradient(178deg,
-      $orange, rgba(246, 103, 51, 0) 10%),
+  background: linear-gradient(178deg, $orange, rgba(246, 103, 51, 0) 10%);
 }
 
 blockquote {

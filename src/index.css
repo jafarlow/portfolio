@@ -509,7 +509,6 @@ section {
 
 /* CONTACT INFO SECTION */
 .contact {
-  margin-top: 6.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -519,6 +518,10 @@ section {
     font-weight: bold; }
   .contact-text {
     margin-top: 1.5rem; }
+
+/* TESTIMONIAL SECTION */
+#testimonial-header {
+  margin-top: 6.5rem; }
 
 .testimonial-section {
   display: grid;
