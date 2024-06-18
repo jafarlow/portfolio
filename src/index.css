@@ -78,6 +78,11 @@ ul {
   margin-left: 0.5rem;
   padding: 0 2rem; }
 
+hr {
+  height: 3px;
+  background-color: orange;
+  border-color: orange; }
+
 header {
   position: fixed;
   top: 0;
@@ -683,7 +688,11 @@ footer {
   header .header-text .header-maintext {
     font-size: 1.75rem; }
   ul {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .pic-ctn {
+    width: 355px;
+    margin: 0 auto;
+    height: 200px; } }
 
 @media only screen and (max-width: 31.25rem) {
   nav ul {
@@ -717,10 +726,14 @@ footer {
     font-size: 1rem; } }
 
 @media only screen and (max-width: 29.6875rem) {
+  h2 {
+    font-size: 1.6rem; }
   .project-overview .project-info .linkout-wrapper {
     flex-direction: column; }
     .project-overview .project-info .linkout-wrapper .linkout {
       margin-bottom: 0.5rem; }
   .project-overview .project-info .tech-used {
     margin-top: 0.25rem;
-    margin-bottom: 0.25rem; } }
+    margin-bottom: 0.25rem; }
+  .logos {
+    max-width: 350px; } }
