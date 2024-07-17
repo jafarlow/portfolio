@@ -93,6 +93,7 @@ main {
 #featured-project {
   display: flex;
   flex-direction: column;
+  margin-top: 6.5rem;
 }
 
 @keyframes display {
@@ -127,6 +128,7 @@ main {
   animation: display 30s infinite;
   box-sizing: border-box;
   border: solid 0.175rem $purple;
+  width: 100%; //! NEW SETTING AS OF 7/17
 }
 
 img:nth-child(1) {
@@ -167,8 +169,8 @@ ul {
 
 hr {
   height: 3px;
-  background-color: orange;
-  border-color: orange;
+  background-color: $orange;
+  border-color: $orange;
 }
 
 // HEADER
@@ -238,22 +240,24 @@ nav {
   }
 }
 
+//! Headline is only visible in tablet & smaller views
 .headline {
-  margin-top: 6.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
+//   margin-top: 6.5rem;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
 
-  .signature {
-    font-family: "Signature", cursive;
-    font-size: 6rem;
-    margin: 0;
-    color: $purple;
-  }
+//   .signature {
+//     font-family: "Signature", cursive;
+//     font-size: 6rem;
+//     margin: 0;
+//     color: $purple;
+//   }
 
-  p {
-    margin-top: 0; // to support margin collapse in flex
-  }
+//   p {
+//     margin-top: 0; // to support margin collapse in flex
+//   }
 }
 
 .featured-tech {
@@ -1021,6 +1025,28 @@ footer {
     font-size: 1rem;
   }
 
+  .headline {
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .signature {
+      font-family: "Signature", cursive;
+      font-size: 6rem;
+      margin: 0;
+      color: $purple;
+    }
+  
+    p {
+      margin-top: 0; // to support margin collapse in flex
+    }
+  }
+
+  #featured-project {
+    margin-top: 0;
+  }
+
   .section-head {
     margin-top: 3rem;
   }
@@ -1135,7 +1161,20 @@ footer {
 @media only screen and (max-width: 35.9375rem) {
   header {
     .header-text {
-      margin-left: 1rem;
+      // margin-left: 1rem;
+      display: none;
+    }
+  }
+
+  .headline {
+    // margin-top: 4rem;
+
+    .signature {
+      font-size: 4rem;
+    }
+  
+    p {
+      margin-top: 0; // to support margin collapse in flex
     }
   }
 
@@ -1195,6 +1234,10 @@ footer {
     }
   }
 
+  .headline {
+    margin-top: 4rem;
+  }
+
   .hero-image {
     margin-top: 3rem;
   }
@@ -1250,5 +1293,14 @@ footer {
 
   .logos {
     max-width: 350px;
+  }
+}
+
+// TODO: convert to rem
+@media only screen and (max-width: 450px) {
+  .headline {
+    .signature {
+      font-size: 3.5rem;
+    }
   }
 }
