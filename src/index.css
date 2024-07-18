@@ -18,6 +18,14 @@ main {
   width: 70rem;
   margin: 0 auto; }
 
+#home-body {
+  display: flex;
+  flex-direction: column; }
+  #home-body main {
+    flex: 1 0 auto; }
+  #home-body footer {
+    flex-shrink: 0; }
+
 #featured-project {
   display: flex;
   flex-direction: column;

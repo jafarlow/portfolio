@@ -90,6 +90,19 @@ main {
 
 //!
 
+#home-body {
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  footer {
+    flex-shrink: 0;
+  }
+}
+
 #featured-project {
   display: flex;
   flex-direction: column;
