@@ -433,6 +433,9 @@ section {
     color: white; }
 
 /* PROJECT SECTION */
+#projects {
+  margin-top: 6.5rem; }
+
 .project-paragraph {
   text-align: center;
   margin: 1rem; }
@@ -588,6 +591,8 @@ footer {
 @media only screen and (max-width: 71rem) {
   main {
     width: 53.125rem; }
+  .hero-image {
+    height: 35%; }
   .project-overview .project-screenshot {
     max-width: 50%;
     height: max-content; }
@@ -721,6 +726,8 @@ footer {
       display: none; }
   .headline {
     margin-top: 4rem; }
+  #testimonial-header, #projects {
+    margin-top: 4.5rem; }
   .hero-image {
     margin-top: 3rem; }
   .profile-img {
@@ -753,3 +760,12 @@ footer {
 @media only screen and (max-width: 450px) {
   .headline .signature {
     font-size: 3.5rem; } }
+
+@media only screen and (orientation: landscape) and (max-width: 71rem) {
+  .profile-img {
+    max-width: 21.875rem;
+    height: auto; } }
+
+@media only screen and (orientation: landscape) and (min-height: 350px) and (max-height: 500px) {
+  .hero-image {
+    height: 75%; } }

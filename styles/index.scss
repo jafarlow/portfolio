@@ -241,23 +241,9 @@ nav {
 }
 
 //! Headline is only visible in tablet & smaller views
+//? check media queries for their settings
 .headline {
   display: none;
-//   margin-top: 6.5rem;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   .signature {
-//     font-family: "Signature", cursive;
-//     font-size: 6rem;
-//     margin: 0;
-//     color: $purple;
-//   }
-
-//   p {
-//     margin-top: 0; // to support margin collapse in flex
-//   }
 }
 
 .featured-tech {
@@ -306,7 +292,7 @@ nav {
 
 .profile-img {
   display: block;
-  width: 31.25rem;
+  width: 31.25rem; //500px
   border: 0.25rem solid $purple;
   border-radius: 3.125rem;
   margin: 2rem auto;
@@ -752,6 +738,10 @@ section {
 
 /* PROJECT SECTION */
 
+#projects {
+  margin-top: 6.5rem;
+}
+
 .project-paragraph {
   text-align: center;
   margin: 1rem;
@@ -984,10 +974,18 @@ footer {
 
 /* MEDIA QUERIES */
 
+//? PORTRAIT MODE SPECIFICS
+//* see bottom for landscape mode tweaks
+
 // 1136px
 @media only screen and (max-width: 71rem) {
   main {
     width: 53.125rem; // 850px
+  }
+
+  .hero-image {
+    // so it doesn't take up enormous screen space
+    height: 35%;
   }
 
   .project-overview {
@@ -1238,6 +1236,10 @@ footer {
     margin-top: 4rem;
   }
 
+  #testimonial-header, #projects {
+    margin-top: 4.5rem;
+  }
+
   .hero-image {
     margin-top: 3rem;
   }
@@ -1303,4 +1305,24 @@ footer {
       font-size: 3.5rem;
     }
   }
+}
+
+//? LANDSCAPE MODE SPECIFICS
+//* see top of media queries section for portrait mode tweaks (treated as default, so no orientation setting there)
+
+@media screen and (orientation: landscape) {
+  // 1136px
+  @media only screen and (max-width: 71rem) {
+    .profile-img {
+      max-width: 21.875rem; //350px
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-height: 350px) and (max-height: 500px) {
+    .hero-image {
+      height: 75%;
+    }
+  }
+
 }
