@@ -1017,6 +1017,14 @@ footer {
   }
 }
 
+//TODO: convert to rem
+@media only screen and (max-width: 1050px) {
+  .pic-ctn {
+    max-width: 790px;
+    max-height: 450px;
+  }
+}
+
 // 875px
 @media only screen and (max-width: 54.6875rem) {
   header {
@@ -1043,7 +1051,7 @@ footer {
 
     .signature {
       font-family: "Signature", cursive;
-      font-size: 6rem;
+      font-size: 5rem;
       margin: 0;
       color: $purple;
     }
@@ -1055,6 +1063,11 @@ footer {
 
   #featured-project {
     margin-top: 0;
+  }
+
+  .pic-ctn {
+    max-width: 790px;
+    max-height: 450px;
   }
 
   .section-head {
@@ -1080,6 +1093,9 @@ footer {
 
 // 790px
 @media only screen and (max-width: 49.375rem) {
+  .pic-ctn {
+    max-width: calc(100% - 2rem);
+  }
   .active-projects {
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
   }
@@ -1171,6 +1187,39 @@ footer {
   }
 }
 
+// TODO: convert to rem
+@media only screen and (max-width: 685px) {
+  header {
+    .header-text {
+      margin-left: 1rem;
+      .header-maintext {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 0;
+    }
+  }
+
+  .headline {
+    .signature {
+      font-size: 4.5rem;
+    }
+  }
+
+  .pic-ctn {
+    max-height: 385px;
+  }
+}
+
 // 575px
 @media only screen and (max-width: 35.9375rem) {
   header {
@@ -1190,6 +1239,10 @@ footer {
     p {
       margin-top: 0; // to support margin collapse in flex
     }
+  }
+
+  .pic-ctn {
+    max-height: 350px;
   }
 
   .testimonial-section {
