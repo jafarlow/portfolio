@@ -210,6 +210,9 @@ section {
   margin-bottom: 0.5rem; }
 
 /* LOGOS & ICONS SECTION */
+#tech {
+  margin-top: 6.5rem; }
+
 .tech {
   margin-bottom: 0;
   margin-top: 1rem; }
@@ -483,7 +486,7 @@ section {
   align-items: center; }
 
 .logos {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
@@ -607,6 +610,8 @@ footer {
       justify-content: space-evenly; } }
 
 @media only screen and (max-width: 54.6875rem) {
+  header .header-text .header-subtext {
+    display: none; }
   main {
     width: 100%; }
   p, ul, .link {
@@ -633,7 +638,9 @@ footer {
   .project-overview {
     margin: 0 1rem; }
     .project-overview .project-screenshot {
-      width: 375px; } }
+      width: 375px; }
+  .testimonial-section {
+    margin: 0 1rem; } }
 
 @media only screen and (max-width: 49.375rem) {
   .active-projects {
@@ -696,8 +703,7 @@ footer {
     margin-top: 0; }
   .testimonial-section {
     display: flex;
-    flex-direction: column;
-    margin: 0 1rem; } }
+    flex-direction: column; } }
 
 @media only screen and (max-width: 34.375rem) {
   header .header-text .header-maintext {
@@ -726,7 +732,7 @@ footer {
       display: none; }
   .headline {
     margin-top: 4rem; }
-  #testimonial-header, #projects {
+  #testimonial-header, #projects, #tech {
     margin-top: 4.5rem; }
   .hero-image {
     margin-top: 3rem; }
@@ -764,8 +770,21 @@ footer {
 @media only screen and (orientation: landscape) and (max-width: 71rem) {
   .profile-img {
     max-width: 21.875rem;
-    height: auto; } }
+    height: auto; }
+  .pic-ctn {
+    max-width: 850px;
+    max-height: 500px; } }
 
 @media only screen and (orientation: landscape) and (min-height: 350px) and (max-height: 500px) {
+  nav ul {
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0; }
+  nav li {
+    margin: 0; }
   .hero-image {
-    height: 75%; } }
+    height: 75%; }
+  .pic-ctn {
+    width: 534px;
+    margin: 0 auto;
+    height: 300px; } }

@@ -355,6 +355,10 @@ section {
 
 /* LOGOS & ICONS SECTION */
 
+#tech {
+  margin-top: 6.5rem;
+}
+
 // this is for tech section sub headers
 .tech {
   margin-bottom: 0;
@@ -803,7 +807,7 @@ section {
 }
 
 .logos {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1015,6 +1019,14 @@ footer {
 
 // 875px
 @media only screen and (max-width: 54.6875rem) {
+  header {
+    .header-text {
+      .header-subtext {
+        display: none;
+      }
+    }
+  }
+
   main {
     width: 100%;
   }
@@ -1059,6 +1071,10 @@ footer {
     .project-screenshot {
       width: 375px;
     }
+  }
+
+  .testimonial-section {
+    margin: 0 1rem;
   }
 }
 
@@ -1179,7 +1195,6 @@ footer {
   .testimonial-section {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
   }
 }
 
@@ -1236,7 +1251,7 @@ footer {
     margin-top: 4rem;
   }
 
-  #testimonial-header, #projects {
+  #testimonial-header, #projects, #tech {
     margin-top: 4.5rem;
   }
 
@@ -1317,11 +1332,34 @@ footer {
       max-width: 21.875rem; //350px
       height: auto;
     }
+
+    .pic-ctn {
+      max-width: 850px;
+      max-height: 500px;
+    }
   }
 
   @media only screen and (min-height: 350px) and (max-height: 500px) {
+    nav {
+      ul {
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 0;
+      }
+    }
+
     .hero-image {
       height: 75%;
+    }
+
+    // for feature project images
+    .pic-ctn {
+      width: 534px;
+      margin: 0 auto;
+      height: 300px;
     }
   }
 
