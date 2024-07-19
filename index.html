@@ -6,768 +6,145 @@
     <link rel="stylesheet" type="text/css" href="./src/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   </head>
-  <body>
+  <body id="home-body">
     <header>
       <p class="header-text"><span class="header-maintext">Jacob Farlow</span> <span class="header-subtext">| Software Engineer</span></p>
       <nav>
         <ul>
           <li>
-            <a href="#about">About</a>
+            <a href="./index.html" class="current-page">Home</a>
           </li>
           <li>
-            <a href="#tech">Tech</a>
+            <a href="./pages/about.html">About</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="./pages/projects.html">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="./pages/tech.html">Tech</a>
+          </li>
+          <li>
+            <a href="./pages/testimonials.html">Testimonials</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div role="img" class="hero-image" alt="Cover photo: Seaside view of Cefalù, Italy" title="Seaside view of Cefalù, Italy">
-      <div class="hero-text">
-        <h1>Jacob Farlow</h1>
-        <p>Software Engineer in the Greater Boston Area</p>
-        <img width="500" height="337" src="public/images/jacob-min.jpg" alt="Photo of Jacob" class="profile-img" title="Photo of Jacob in a blue suit and yellow tie">
-      </div>
-    </div>
     <main>
-      <section>
-        <h2 id="about" class="section-head">About Me</h2>
-        <h3 class="about-header">On the business side:</h3>
-        <p class="about-paragraph">
-          I'm a software engineer with a background in IT resource management, and I work on the front end of the stack. My primary code language is TypeScript, with React as my default framework. I'm a habitual learner, dedicated to living the maxim of "learn something new every day". I've held a variety of positions over the years, all of which have shaped me into someone who is perpetually curious and always seeking to learn and grow. My latest formal endeavor has earned me a certification as a ScrumMaster.
-        </p>
-        <p class="about-paragraph">
-          I was recently employed at HqO, Inc. as an App Release Engineer, with my primary role being to organize and automate the release process for HqO's apps. During my tenure, we scaled our release process from handling 50 whitelabels to over 170. More than just releasing new versions of existing apps, I also launched a fair number myself. In March 2022, I was interviewed for the <i>Inside HqO</i> series, which you can view as <a class="link" href="./public/Inside-HqO-Interview.pdf" target="_blank">a PDF here.</a> If you want a more granular view of the other work I did, take a peek at my 
-          <a 
-            class="link"
-            href="https://www.linkedin.com/in/jacob-farlow"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-            LinkedIn page.
-          </a>
-        </p>
-        <p class="about-paragraph">
-          I've been on the receiving end of some truly extraordinary mentorship and friendship over the years. I believe in paying it forward, and would be more than happy to lend a hand if I'm able. Please feel free to <a class="link"
-          href="#contact">reach out</a> if you need someone to look over some code, or have questions about best practices in building websites. If I don't have the answers, I can leverage my network to find someone who might. Software is a remarkably helpful community, and we all benefit from this cooperation.
-        </p>
+      <div class="headline">
+        <h1 class="signature">Jacob Farlow</h1>
+        <p>Software Engineer in the Greater Boston Area</p>
+      </div>
 
-        <p class="about-paragraph" id="newsletters">
-          <b>Software industry newsletters worth checking out: </b>
+      <hr>
+
+      <section id="featured-project">
+        <h2 class="section-head">Featured project: JF Nature</h2>
+        <div class="pic-ctn">
+          <img 
+            src="./public/images/carousel/jf-gallery1-1024.png" 
+            alt="Gallery landing page, showing thumbnail images with their titles" 
+            class="pic"
+            srcset="./public/images/carousel/jf-gallery1-1024.png 1024w, ./public/images/carousel/jf-gallery1-768.png 768w, ./public/images/carousel/jf-gallery1-350.png 350w"
+            sizes="(min-width: 1024px) 1024px,
+                  (min-width: 775px) 768px,
+                  (min-width: 360px) 350px">
+          <img 
+            src="./public/images/carousel/jf-gallery2-1024.png" 
+            alt="Gallery page, showing thumbnail images with their titles and an expanded category selector with 'Birds', 'Invertebrates', and 'Landscapes' selected" 
+            class="pic"
+            srcset="./public/images/carousel/jf-gallery2-1024.png 1024w, ./public/images/carousel/jf-gallery2-768.png 768w, ./public/images/carousel/jf-gallery2-350.png 350w"
+            sizes="(min-width: 1024px) 1024px,
+                  (min-width: 775px) 768px,
+                  (min-width: 360px) 350px">
+          <img 
+            src="./public/images/carousel/jf-gallery3-1024.png" 
+            alt="A fullscreen slideshow view of a wasp with light brown, dark brown, and yellow banding climbs from a plant stem to its leaf. Blurry dewdrops hang in the foreground." 
+            class="pic"
+            srcset="./public/images/carousel/jf-gallery3-1024.png 1024w, ./public/images/carousel/jf-gallery3-768.png 768w, ./public/images/carousel/jf-gallery3-350.png 350w"
+            sizes="(min-width: 1024px) 1024px,
+                  (min-width: 775px) 768px,
+                  (min-width: 360px) 350px">
+          <img 
+            src="./public/images/carousel/jf-gallery4-1024.png" 
+            alt="A fullscreen slideshow view of a female red-winged blackbird clinging to a reed" 
+            class="pic"
+            srcset="./public/images/carousel/jf-gallery4-1024.png 1024w, ./public/images/carousel/jf-gallery4-768.png 768w, ./public/images/carousel/jf-gallery4-350.png 350w"
+            sizes="(min-width: 1024px) 1024px,
+                  (min-width: 775px) 768px,
+                  (min-width: 360px) 350px">
+          <img 
+            src="./public/images/carousel/jf-gallery5-1024.png" 
+            alt="A fullscreen slideshow view of summer noontime sunshine casting mountain features in sharp relief with short grass, crags, and eroded runnels evident." 
+            class="pic"
+            srcset="./public/images/carousel/jf-gallery5-1024.png 1024w, ./public/images/carousel/jf-gallery5-768.png 768w, ./public/images/carousel/jf-gallery5-350.png 350w"
+            sizes="(min-width: 1024px) 1024px,
+                  (min-width: 775px) 768px,
+                  (min-width: 360px) 350px">
+          <img 
+            src="./public/images/carousel/jf-gallery6-1024.png" 
+            alt="A fullscreen slideshow view of a peacock showcasing its vibrant colors" 
+            class="pic"
+            srcset="./public/images/carousel/jf-gallery6-1024.png 1024w, ./public/images/carousel/jf-gallery6-768.png 768w, ./public/images/carousel/jf-gallery6-350.png 350w"
+            sizes="(min-width: 1024px) 1024px,
+                  (min-width: 775px) 768px,
+                  (min-width: 360px) 350px">
+        </div>
+        <p class="about-paragraph">This project is a superb blend of the two facets of myself: nature photographer and software engineer. I opted to build this photography portfolio from the ground up in order to explore the Next.js framework and leverage its in-built support for serverless functions. Whether you're evaluating the underlying code or the quality of the photography, I hope you'll find it a pleasant experience!
           <a
-            class="link"
-            href="https://a11yweekly.com/"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-            A11y Weekly
-          </a>,
-          <a
-            class="link"
-            href="https://frontendfoc.us/"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-             Frontend Focus
-          </a>,
-          <a
-            class="link"
-            href="https://jamstack.email/"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-            JAMstacked
-          </a>,
-          <a
-            class="link"
-            href="https://javascriptweekly.com/"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-             JavaScript Weekly
-          </a>, &
-          <a
-            class="link"
-            href="https://responsivedesign.is/"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-             Responsive Web Design
-          </a>
-        </p>
-        <h3 class="about-header">On the personal side:</h3>
-        <p class="about-paragraph">
-          I enjoy reading immensely--mostly fantasy and science-fiction--with an annual goal of at least 45 books. I delight in visiting used book stores, scouring the shelves to see where I can add to my collections. My personal library currently sits at almost 1200 books, and I can't wait to add more. One of my dreams is to have an entire room of a house be wall-to-wall, floor-to-ceiling bookshelves.</p> 
-        <p class="about-paragraph"><b>Recommendations from my 2024 reading:</b></p>
-        <!-- NOTE: &nbsp; adds a space before text -->
-        <ul class="reading-list">
-          <li><cite>
-            <a
-              class="link"
-              href="https://www.goodreads.com/series/171685-october-daye"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              The October Daye series
-            </a>
-          </cite>&nbsp;by Seanan McGuire </li>
-        </ul>
-        <p class="about-paragraph">
-          I am a self-taught drummer who jams to blues, blues-rock, and rock. I use a blend of Paiste, Meinl, and Sabian cymbals to round out my sound. Not surprisingly, my musical tastes extend far beyond my skills behind the kit. As a listener I'm particularly drawn to the syncopated rhythms of jazz, progressive rock, & progressive metal, and delight in the opportunities these genres have for experimentation and improvisation. 
-        </p>
-        <p class="about-paragraph">
-          I enjoy watching sports, and have dedicated much of my viewing time to AS Roma, a professional soccer team based in the Italian capital, and Clemson Football, in support of my alma mater.
-        </p>
-        <p class="about-paragraph">
-          The past 6 years I've eagerly awaited each summer's Tour de France, and this year have found out just how big the world of cycling truly is. Discovering GCN+ has given me access to over 190 televised races in 2023 alone, and I've watched every one of them! It has inspired me to spend more time on the bike, and I've found I enjoy pedalling away just as much today as I did when I was a child.
-        </p>
-        <p class="about-paragraph">
-          I have a passion for travel, and have been to 15 countries and 23 US States. I'm fascinated by other cultures, and dedicate a majority of my time abroad bouncing from one museum to the next, and documenting my travels with my trusty Canon camera. Beginning in 2021, I dove headlong into nature photography. It's something I've been dabbling with for ages, and decided to fully commit to it as a "professional hobby" that summer when I upgraded to a new lens. You can read more about that journey at my 
-          <a
-            class="link"
-            href="https://jfarlow-nature.vercel.app/about"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-            photography portfolio site.
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h2 id="tech" class="section-head">Frameworks, Languages, and Technology</h2>
-
-        <h3 class="about-header tech">Active experience:</h3>
-
-          <div class="icons-wrapper">
-
-            <figure class="svg appcenter">
-              <img src="./public/svg-icons/app-center.svg" alt="app center logo" width="112">
-              <figcaption id="appcenter">App Center mobile app compiler</figcaption>
-            </figure>
-
-            <figure class="svg cloudinary">
-              <img src="./public/svg-icons/cloudinary-original.svg" alt="cloudinary logo" width="112">
-              <figcaption id="cloudinary">Cloudinary image & video API platform</figcaption>
-            </figure>
-
-            <figure class="svg confluence">
-              <img src="./public/svg-icons/confluence.svg" alt="confluence logo" width="112">
-              <figcaption id="confluence">Confluence team wiki</figcaption>
-            </figure>
-
-            <figure class="svg css3">
-              <img src="./public/svg-icons/css3-original.svg" alt="css3 logo" width="112">
-              <figcaption id="css3">CSS stylesheet language</figcaption>
-            </figure>
-
-            <figure class="svg git">
-              <img src="./public/svg-icons/git-plain-wordmark.svg" alt="git logo" width="112">
-              <figcaption id="git">git version control system</figcaption>
-            </figure>
-
-            <figure class="svg github">
-              <img src="./public/svg-icons/github-original.svg" alt="github logo" width="112">
-              <figcaption id="github">GitHub cloud-based git repository</figcaption>
-            </figure>
-
-            <figure class="svg html5">
-              <img src="./public/svg-icons/html5-original.svg" alt="html logo" width="112">
-              <figcaption id="html5">HTML markup language</figcaption>
-            </figure>
-
-            <figure class="svg javascript">
-              <img src="./public/svg-icons/javascript-original.svg" alt="javascript logo" width="112">
-              <figcaption id="javascript">JavaScript programming language</figcaption>
-            </figure>
-
-            <figure class="svg jira">
-              <img src="./public/svg-icons/jira.svg" alt="jira logo" width="112">
-              <figcaption id="jira">Jira issue tracking platform</figcaption>
-            </figure>
-
-            <figure class="svg macos">
-              <img src="./public/svg-icons/macos.svg" alt="macos logo" width="112">
-              <figcaption id="macos">Mac operating system</figcaption>
-            </figure>
-
-            <figure class="svg netlify">
-              <img src="./public/svg-icons/netlify-original.svg" alt="netlify logo" width="112">
-              <figcaption id="netlify">Netlify developer platform</figcaption>
-            </figure>
-
-            <figure class="svg nextjs">
-              <img src="./public/svg-icons/nextjs-original.svg" alt="next.js logo" width="112">
-              <figcaption id="nextjs">Next.js front end framework</figcaption>
-            </figure>
-
-            <figure class="svg npm">
-              <img src="./public/svg-icons/npm-original-wordmark.svg" alt="npm logo" width="112">
-              <figcaption id="npm">npm package manager for JavaScript</figcaption>
-            </figure>
-
-            <figure class="svg postman">
-              <img src="./public/svg-icons/postman.svg" alt="postman logo" width="112">
-              <figcaption id="postman">Postman API platform</figcaption>
-            </figure>
-
-            <figure class="svg react">
-              <img src="./public/svg-icons/react-original.svg" alt="react logo" width="112">
-              <figcaption id="react">React front end framework</figcaption>
-            </figure>
-
-            <figure class="svg sass">
-              <img src="./public/svg-icons/sass-original.svg" alt="sass logo" width="112">
-              <figcaption id="sass">Sass CSS preprocessor</figcaption>
-            </figure>
-
-            <figure class="svg slack">
-              <img src="./public/svg-icons/slack-original-wordmark.svg" alt="slack logo" width="112">
-              <figcaption id="slack">Slack messaging platform</figcaption>
-            </figure>
-
-            <figure class="svg typescript">
-              <img src="./public/svg-icons/typescript-original.svg" alt="typescript logo" width="112">
-              <figcaption id="typescript">TypeScript programming language</figcaption>
-            </figure>
-
-            <figure class="svg ubuntu-os">
-              <img src="./public/svg-icons/ubuntu-plain-wordmark.svg" alt="ubuntu operating system logo" width="112">
-              <figcaption id="ubuntu-os">Ubuntu operating system</figcaption>
-            </figure>
-
-            <figure class="svg vercel">
-              <img src="./public/svg-icons/vercel-original.svg" alt="vercel logo" width="112">
-              <figcaption id="vercel">Vercel developer platform</figcaption>
-            </figure>
-
-            <figure class="svg vscode">
-              <img src="./public/svg-icons/vscode.svg" alt="vscode logo" width="112">
-              <figcaption id="vscode">VS Code text editor</figcaption>
-            </figure>
-
-            <figure class="svg yarn">
-              <img src="./public/svg-icons/yarn.svg" alt="yarn logo" width="112">
-              <figcaption id="yarn">Yarn package manager</figcaption>
-            </figure>
-
-          </div>
-
-        <h3 class="about-header tech">Previous experience:</h3>
-          <div class="icons-wrapper">
-
-            <figure class="svg atom">
-              <img src="./public/svg-icons/atom.svg" alt="atom logo" width="112">
-              <figcaption id="atom">Atom text editor</figcaption>
-            </figure>
-
-            <figure class="svg bootstrap">
-              <img src="./public/svg-icons/bootstrap-plain.svg" alt="bootstrap logo" width="112">
-              <figcaption id="bootstrap">Bootstrap framework</figcaption>
-            </figure>
-
-            <figure class="svg ember">
-              <img src="./public/svg-icons/ember-original-wordmark.svg" alt="ember logo" width="112">
-              <figcaption id="ember">Ember front end framework</figcaption>
-            </figure>
-
-            <figure class="svg express">
-              <img src="./public/svg-icons/express-original.svg" alt="express logo" width="112">
-              <figcaption id="express">Express web app framework</figcaption>
-            </figure>
-
-            <figure class="svg grunt">
-              <img src="./public/svg-icons/grunt-original-wordmark.svg" alt="grunt logo" width="112">
-              <figcaption id="grunt">Grunt task runner</figcaption>
-            </figure>
-
-            <figure class="svg handlebars">
-              <img src="./public/svg-icons/handlebars-original.svg" alt="handlebars logo" width="112">
-              <figcaption id="handlebars">Handlebars templating language</figcaption>
-            </figure>
-
-            <figure class="svg heroku">
-              <img src="./public/svg-icons/heroku-original.svg" alt="heroku logo" width="112">
-              <figcaption id="heroku">Heroku cloud platform</figcaption>
-            </figure>
-
-            <figure class="svg jquery">
-              <img src="./public/svg-icons/jquery-original.svg" alt="jquery logo" width="112">
-              <figcaption id="jquery">jQuery library</figcaption>
-            </figure>
-
-            <figure class="svg mongodb">
-              <img src="./public/svg-icons/mongodb-plain.svg" alt="mongodb logo" width="112">
-              <figcaption id="mongodb">MongoDB data platform</figcaption>
-            </figure>
-
-            <figure class="svg node">
-              <img src="./public/svg-icons/nodejs-original.svg" alt="nodejs logo" width="112">
-              <figcaption id="node">Node.js runtime environment</figcaption>
-            </figure>
-
-            <figure class="svg rails">
-              <img src="./public/svg-icons/rails-plain.svg" alt="rails logo" width="112">
-              <figcaption id="rails">Ruby on Rails web app framework</figcaption>
-            </figure>
-
-            <figure class="svg ruby">
-              <img src="./public/svg-icons/ruby.svg" alt="ruby logo" width="112">
-              <figcaption id="ruby">Ruby programming language</figcaption>
-            </figure>
-
-            <figure class="svg trello">
-              <img src="./public/svg-icons/trello-plain-wordmark.svg" alt="trello logo" width="112">
-              <figcaption id="trello">Trello web-based Kanban program</figcaption>
-            </figure>
-
-          </div>
-      </section>
-
-      <section>
-        <h2 id="projects" class="section-head">Projects</h2>
-
-        <h3 class="about-header">Updates:</h3>
-        <p class="about-paragraph"><b>(November 2023):</b> I've done some major stylistic updates to this portfolio's project section. These updates do a better job promoting the projects themselves, as well as allowing me to include additional context or information for each project. There's also a better responsive pattern when viewing this portfolio across a variety of device widths.</p>
-
-        <p class="about-paragraph">In addition to the major updates to my development portfolio, I've done some minor work on my photography portfolio. Most notably, I've added titles for each image which will display in desktop view, and I've restyled the hover effects to incorporate the new content. In my eyes these changes may be minor, but they make the portfolio feel more professional.
-          <a
-            class="link"
-            href="https://jfarlow-nature.vercel.app"
-            target="_blank"
-            rel="external nofollow noopener noreferrer"
+          class="link"
+          href="https://jfarlow-nature.vercel.app"
+          target="_blank"
+          rel="external nofollow noopener noreferrer"
           >
             Check it out!
           </a>
         </p>
-
-        <p class="about-paragraph"><b>(October 2023):</b> I have completed my certification to become a ScrumMaster! Achieving this certification has brought a semblance of order and understanding to my experience as an engineer. Having previously worked on scrum teams, I never focused too hard about <em>why</em> we did some things--just that they seemed to make sense. With this course I now understand more completely the reasons scrum events are an integral part of the development process. Credential details can be 
-          <a
-            class="link"
-            href="https://bcert.me/snarisexi"
-            target="_blank"
-            rel="external nofollow noopener noreferrer"
-          >
-            viewed here.
-          </a>
-        </p>
-
-        <p class="about-paragraph">In addition to my new certification, I've done some behind-the-scenes work on this portfolio page. I replaced the inline SVGs with image elements, and updated the display to move the descriptors into a figure caption. Previously, this information was hidden behind a cursor hover action.</p>
-
-        <p class="about-paragraph"><b>(September 2023):</b> I have launched my photography portfolio! This is a special moment for me, as I worked relentlessly to sift through the more than 70,000 photos I've taken to select the very best of my nature photography. Beyond simply selecting the images, each one has a custom caption and includes species identification. In addition to all the work that entails, I built the portfolio from the ground up using Next.js & TypeScript as the code, Cloudinary as the CDN & API, and Vercel as the site host. Working with Next.js was a brand new endeavor for me, and I'm very glad I went this route.
-          <a
-            class="link"
-            href="https://jfarlow-nature.vercel.app"
-            target="_blank"
-            rel="external nofollow noopener noreferrer"
-          >
-            Take a look!
-          </a>
-        </p>
-
-        <p class="about-paragraph"><b>(July 2023):</b> I'm still working on the photo gallery project. When it came time to deploy I encountered some unexpected difficulties with serving the back end in production. While the project was built as React/Express, this is not the best tech setup for what I'm attempting to accomplish. The scope of the project changed along the way, and the current iteration is over-engineered. Therefore, I'm rebuilding the project as a Next.js app to leverage serverless functions. I'll be deploying this to Vercel, and both Vercel and Cloudinary suggest this approach.</p> 
-
-        <p class="about-paragraph">I've made some minor updates to this portfolio to include some better information about the ultimate goal of each of the practice projects. </p>
-
-        <p class="about-paragraph"><b>(May 2023):</b> I revamped this portfolio page to remove bloated code, close security vulnerabilities, and update dependencies, and upgrade from Webpack 3 to Webpack 5. I'm continuing to work on my photo gallery project. There are some kinks with how the Cloudinary API serves data that I need to resolve, as well as finalizing accessibility support for mobile view before I can publish this project.</p>
-
-        <p class="about-paragraph"><b>(August 2022):</b> I'm working on building out a photo gallery using React, Typescript, Express, and the Cloudinary API. I'm excited to expand my Typescript knowledge, revisit Express, and dabble with a new API. Let's be honest, the early projects where I built my own back end leave a lot to be desired. But hey, that was early days when I was just learning there's more to software than HTML! This upcoming project will be hosted on Netlify, which is nice and easy, even if it will get a wacky URL.</p>
-        
-        <p class="about-paragraph">I just wrapped up version 3.1.1 of my Recipe Search app! This latest update, while minor, addressed a number of security vulnerabilities in the code. Code maintenance is a critical tool in an engineer's belt, and this was the first time I got to really dive into it solo.
-          <a
-            class="link"
-            href="https://vibrant-murdock-290bfe.netlify.app/"
-            target="_blank"
-            rel="external nofollow noopener noreferrer"
-          >
-            Give it a go!
-          </a>
-        </p>
-
-        <p class="about-paragraph">Of course, my learning is never complete. Every time I try out a new-to-Jacob project, read a code article, or watch a code tutorial I'm learning something new, or deepening my comprehension of engineering concepts.</p>
-
-        <h3 class="about-header">Completed projects:</h3>
-        <p class="about-paragraph">This is a small selection of finished projects. You can use the links to either visit the project itself, or to view the code directly on GitHub. Each of these was was built as a hands-on way to learn something specific, and goes far beyond just the stated learning goal.</p>
-
-        <div class="project-overview active-projects">
-
-          <article class="project-wrapper" id="nature">
-            <img src="./public/images/jf-nature-gallery.png" alt="Screenshot of the website's gallery view" width="450" height="450" class="project-screenshot">
-            <section class="project-info">
-              <h4>JF Nature</h4>
-              <p>Explore the natural world! Join me as I share the best photography from my adventures split into these seven general categories: Aquatic creatures, Birds, Flora, Fungi, Invertebrates, Landscapes, & Non-avian vertebrates.</p>
-              <p><b>Learning goal:</b> To learn the Next.js framework and serverless functions</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/logo.png" alt="" width="30" height="30">
-                  <a class="link" href="https://jfarlow-nature.vercel.app" target="_blank" rel="external nofollow noopener noreferrer">
-                    Visit the project
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/jfarlow-nature" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/cloudinary-original.svg" alt="Cloudinary logo" title="Cloudinary">
-                  <p>Cloudinary API</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/nextjs-original.svg" alt="Next.js logo" title="Next.js">
-                  <p>Next.js</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/typescript-original.svg" alt="TypeScript logo" title="TypeScript">
-                  <p>TypeScript</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/vercel-original.svg" alt="Vercel logo" title="Vercel">
-                  <p>Vercel</p>
-                </div>
-              </div>
-            </section>
-          </article>
-
-          <article class="project-wrapper" id="recipe">
-            <section class="project-info">
-              <h4>Recipe Search</h4>
-              <p>Discover new recipes in an instant! Quickly scan through a recipe's ingredients without having to scroll past any stories.</p>
-              <p><b>Learning goal:</b> To build an accessible React app that is fast, with no frills.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/logo.png" alt="" width="30" height="30">
-                  <a class="link" href="https://vibrant-murdock-290bfe.netlify.app/" target="_blank" rel="external nofollow noopener noreferrer">
-                    Visit the project
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/recipe-app-practice" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/png-icons/edamam.png" alt="Edamam logo" title="Edamam">
-                  <p>Edamam API</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/netlify-original.svg" alt="Netlify logo" title="Netlify">
-                  <p>Netlify</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/react-original.svg" alt="React logo" title="React">
-                  <p>React</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/sass-original.svg" alt="Sass logo" title="Sass">
-                  <p>Sass</p>
-                </div>
-              </div>
-            </section>
-            <img src="./public/images/recipe-search.png" alt="Screenshot of the recipe website's search page" width="450" height="450" class="project-screenshot">
-          </article>
-
-          <article class="project-wrapper" id="weather">
-            <img src="./public/images/weather-app.png" alt="Screenshot of the weather app website's search page" width="450" height="450" class="project-screenshot">
-            <section class="project-info">
-              <h4>Weather App</h4>
-              <p>Check the current weather for almost any city in the world. Watch as the background updates based on the weather conditions.</p>
-              <p><b>Learning goal:</b> To leverage an API while practicing with React, and conditionally render CSS based on API responses.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/logo.png" alt="" width="30" height="30">
-                  <a class="link" href="https://quizzical-swanson-79efa8.netlify.app/" target="_blank" rel="external nofollow noopener noreferrer">
-                    Visit the project
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/weather-app-practice" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/netlify-original.svg" alt="Netlify logo" title="Netlify">
-                  <p>Netlify</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/png-icons/openweather.png" alt="OpenWeatherMap logo" title="OpenWeatherMap">
-                  <p>OpenWeatherMap API</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/react-original.svg" alt="React logo" title="React">
-                  <p>React</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/sass-original.svg" alt="Sass logo" title="Sass">
-                  <p>Sass</p>
-                </div>
-              </div>
-            </section>
-          </article>
-        </div>
-
-        <h3 class="about-header">Semi-retired projects:</h3>
-        <p class="about-paragraph">These are two of my older projects, and are the first ones I did after my General Assembly coursework. They still work, though I have no intentions for keeping them updated or for expanding them beyond what they are now. Give 'em a shot if you have five minutes to kill and want to do something simple.</p>
-
-        <div class="project-overview active-projects">
-
-          <article class="project-wrapper" id="tolkien">
-            <section class="project-info">
-              <h4>Tolkien Quiz</h4>
-              <p>Test your knowledge of one of literature's greatest storytellers.</p>
-              <p><b>Learning goal:</b> To build an app using plain JavaScript in order to work with data from a JSON file.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/logo.png" alt="" width="30" height="30">
-                  <a class="link" href="https://modest-lumiere-4e068f.netlify.app/" target="_blank" rel="external nofollow noopener noreferrer">
-                    Visit the project
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/code-a-quiz-practice" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/html5-original.svg" alt="HTML5 logo" title="HTML5">
-                  <p>HTML5</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/javascript-original.svg" alt="JavaScript logo" title="JavaScript">
-                  <p>JavaScript</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/netlify-original.svg" alt="Netlify logo" title="Netlify">
-                  <p>Netlify</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/sass-original.svg" alt="Sass logo" title="Sass">
-                  <p>Sass</p>
-                </div>
-              </div>
-            </section>
-            <img src="./public/images/tolkien-quiz.png" alt="Screenshot of the Tolkien quiz" width="450" height="450" class="project-screenshot">
-          </article>
-
-          <article class="project-wrapper" id="rps">
-            <img src="./public/images/rps.png" alt="Screenshot of the Rock, Paper, Scissors game" width="450" height="450" class="project-screenshot">
-            <section class="project-info">
-              <h4>Rock, Paper, Scissors</h4>
-              <p>Challenge the computer in a bout of RoShamBo.</p>
-              <p><b>Learning goal:</b> To build and deploy an app using only plain JavaScript.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/logo.png" alt="" width="30" height="30">
-                  <a class="link" href="https://laughing-euclid-00aeb6.netlify.app/" target="_blank" rel="external nofollow noopener noreferrer">
-                    Visit the project
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/rps-practice" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/html5-original.svg" alt="HTML5 logo" title="HTML5">
-                  <p>HTML5</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/javascript-original.svg" alt="JavaScript logo" title="JavaScript">
-                  <p>JavaScript</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/netlify-original.svg" alt="Netlify logo" title="Netlify">
-                  <p>Netlify</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/sass-original.svg" alt="Sass logo" title="Sass">
-                  <p>Sass</p>
-                </div>
-              </div>
-            </section>
-          </article>
-
-        </div>
-
-        <h3 class="about-header">Retired projects:</h3>
-        <p class="about-paragraph">These projects are dead, are not maintained, and are non-functional. These were part of my General Assembly coursework, required basic user authentication, and may leverage Heroku for backend support. I'm keeping them here more as a reminder of how far I've come than to show off something that's neato.</p>
-
-        <div class="project-overview retired">
-
-          <article class="project-wrapper" id="readers-wishlist">
-            <img src="./public/images/readers-wishlist.png" alt="Screenshot of the Reader's Wishtlist app" width="350" height="350" class="retired-screenshot">
-            <section class="project-info">
-              <h4>Reader's Wishlist</h4>
-              <p>A book suggester for the indecisive reader.</p>
-              <p><b>Learning goal:</b> A first endeavor in old-school React, plus a first shot at Node/Express on the backend.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/readers-wishlist-front-end" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the front end repo on GitHub
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/readers-wishlist-back-end" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the back end repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/bootstrap-plain.svg" alt="Bootstrap logo" title="Bootstrap">
-                  <p>Bootstrap</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/heroku-original.svg" alt="Heroku logo" title="Heroku">
-                  <p>Heroku</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/nodejs-original.svg" alt="Node logo" title="NodeJS">
-                  <p>Node</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/react-original.svg" alt="React logo" title="React">
-                  <p>React</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/sass-original.svg" alt="Sass logo" title="Sass">
-                  <p>Sass</p>
-                </div>
-              </div>
-            </section>
-          </article>
-
-          <article class="project-wrapper" id="collection-builder">
-            <section class="project-info">
-              <h4>Collection Builder</h4>
-              <p>A single-page application for cataloging musical records.</p>
-              <p><b>Learning goal:</b> To build my first full-stack app, learn Ruby on Rails, and deploy a back end.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/album-library-front-end" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the front end repo on GitHub
-                  </a>
-                </div>
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/album-library-back-end" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the back end repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/css3-original.svg" alt="CSS3 logo" title="CSS3">
-                  <p>CSS3</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/handlebars-original.svg" alt="Handlebars logo" title="Handlebars">
-                  <p>Handlebars</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/heroku-original.svg" alt="Heroku logo" title="Heroku">
-                  <p>Heroku</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/jquery-original.svg" alt="jQuery logo" title="jQuery">
-                  <p>jQuery</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/rails-plain.svg" alt="Rails logo" title="Rails">
-                  <p>Ruby on Rails</p>
-                </div>
-              </div>
-            </section>
-            <img src="./public/images/collection-builder.png" alt="Screenshot of the Reader's Wishtlist app" width="350" height="350" class="retired-screenshot">
-          </article>
-
-          <article class="project-wrapper" id="tic-tac-toe">
-            <img src="./public/images/tic-tac-toe.png" alt="Screenshot of Tic-Tac-Toe app" width="350" height="350" class="retired-screenshot">
-            <section class="project-info">
-              <h4>Tic-Tac-Toe</h4>
-              <p>A time-wasting classic!</p>
-              <p><b>Learning goal:</b> To build my first app, learn JavaScript, and deploy a project.</p>
-              <div class="linkout-wrapper">
-                <div class="linkout">
-                  <img src="./public/svg-icons/github-original.svg" alt="GitHub logo" width="30" height="30" >
-                  <a class="link" href="https://github.com/jafarlow/tic-tac-toe" target="_blank" rel="external nofollow noopener noreferrer">
-                    Review the repo on GitHub
-                  </a>
-                </div>
-              </div>
-              <p class="tech-used"><b>Tech used:</b> </p>
-              <div class="logos">
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/css3-original.svg" alt="CSS3 logo" title="CSS3">
-                  <p>CSS3</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/html5-original.svg" alt="HTML5 logo" title="HTML5">
-                  <p>HTML5</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/javascript-original.svg" alt="JavaScript logo" title="JavaScript">
-                  <p>JavaScript</p>
-                </div>
-                <div class="logo-wrapper">
-                  <img width="30" height="30" src="./public/svg-icons/jquery-original.svg" alt="jQuery logo" title="jQuery">
-                  <p>jQuery</p>
-                </div>
-              </div>
-            </section>
-          </article>
-
+        <div class="logos about-paragraph featured-tech">
+          <span><b>Tech leveraged:</b>&nbsp;</span>
+          <div class="logo-wrapper">
+            <img width="30" height="30" src="./public/svg-icons/cloudinary-original.svg" alt="Cloudinary logo" title="Cloudinary">
+            <p>Cloudinary API</p>
+          </div>
+          <div class="logo-wrapper">
+            <img width="30" height="30" src="./public/svg-icons/nextjs-original.svg" alt="Next.js logo" title="Next.js">
+            <p>Next.js</p>
+          </div>
+          <div class="logo-wrapper">
+            <img width="30" height="30" src="./public/svg-icons/typescript-original.svg" alt="TypeScript logo" title="TypeScript">
+            <p>TypeScript</p>
+          </div>
+          <div class="logo-wrapper">
+            <img width="30" height="30" src="./public/svg-icons/vercel-original.svg" alt="Vercel logo" title="Vercel">
+            <p>Vercel</p>
+          </div>
         </div>
       </section>
-
-      <section id="contact" class="contact">
-        <h2 class="section-head">Contact Info</h2>
-
-        <p class="contact-text">The best way to reach me is by email. Drop me a line at <span class="contact-email">JacobAFarlow@gmail.com</span></p>
-      </section>
+      <hr>
+      <p class="about-paragraph">Have a gander at some other fun things I've explored by heading over to my <a href="./pages/projects.html">projects page.</a></p>
     </main>
 
     <footer>
       <div class="footer-section">
-        <a href="https://github.com/jafarlow/" class="footer-icon" target="_blank" rel="external nofollow noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="80">
-            <title>Visit Jacob's GitHub page</title>
+        <div class="footer-link">
+          <img src="./public/png-icons/jf-logo-white.png" alt="" width="32">
+          <p class="footer-text">Created by Jacob A Farlow</p>
+        </div>
+
+        <div class="footer-link">
+          <svg id="GitHub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="80" class="footer-icon" role="img" aria-labelledby="gh-linkout">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"/>
             <path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"/>
           </svg>
-        </a>
-        <p class="footer-text">
-          Created by Jacob A Farlow
-        </p>
-        <a href="https://www.linkedin.com/in/jacob-farlow" class="footer-icon" target="_blank" rel="external nofollow noopener noreferrer">
-          <svg id="Linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="80">
-            <title>Visit Jacob's LinkedIn profile</title>
+          <a href="https://github.com/jafarlow/"  target="_blank" rel="external nofollow noopener noreferrer" id="gh-linkout">Visit Jacob's GitHub page</a>
+        </div>
+
+        <div class="footer-link">
+          <svg id="Linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="80" class="footer-icon" role="img" aria-labelledby="li-linkout">
             <path d="M116,3H12a8.91,8.91,0,0,0-9,8.8V116.22A8.91,8.91,0,0,0,12,125H116a8.93,8.93,0,0,0,9-8.81V11.77A8.93,8.93,0,0,0,116,3ZM39.17,107H21.06V48.73H39.17Zm-9-66.21a10.5,10.5,0,1,1,10.49-10.5A10.5,10.5,0,0,1,30.12,40.77ZM107,107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87,7.36-10.87,15V107H50.53V48.73H67.89v8h.24c2.42-4.58,8.32-9.41,17.13-9.41C103.6,47.28,107,59.35,107,75Z"/>
           </svg>
-        </a>
+          <a href="https://www.linkedin.com/in/jacob-farlow"  target="_blank" rel="external nofollow noopener noreferrer" id="li-linkout">Visit Jacob's LinkedIn profile</a>
+        </div>
       </div>
-      <p id="credit">Logos sourced from Konpa's <a id="devicon" href="https://konpa.github.io/devicon/" target="_blank" rel="external nofollow noopener noreferrer" title="Visit the Devicon website">Devicon</a> project</p>
     </footer>
   </body>
 </html>
