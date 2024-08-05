@@ -542,28 +542,32 @@ section {
   row-gap: 1rem; }
 
 .testimonial {
-  border-radius: 0.5rem 0.5rem 0 0;
-  background: linear-gradient(178deg, #F66733, rgba(246, 103, 51, 0) 10%); }
+  border: 0.2rem solid #522D80;
+  border-radius: 0.5rem; }
 
 blockquote {
   margin: 0;
-  font-style: italic; }
+  font-style: italic;
+  display: flex;
+  flex-direction: column; }
 
 .wide {
   grid-column-start: 1;
   grid-column-end: 3; }
 
 .quote {
+  font-size: 1.25rem;
   padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+  flex-grow: 1; }
 
 .quote-cite {
   background-color: #522D80;
   color: #f3f3f3;
   border-top: 0.2rem solid #F66733;
   padding: 0.25rem 0.25rem 0.25rem 1rem;
-  margin-bottom: 0;
-  border-radius: 0 0 0.5rem 0.5rem; }
+  margin-bottom: 0; }
 
 /* FOOTER */
 footer {
@@ -656,7 +660,9 @@ footer {
     .project-overview .project-screenshot {
       width: 375px; }
   .testimonial-section {
-    margin: 0 1rem; } }
+    margin: 0 1rem; }
+  .quote {
+    font-size: 1.125rem; } }
 
 @media only screen and (max-width: 49.375rem) {
   .pic-ctn {
@@ -797,7 +803,9 @@ footer {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
   .logos {
-    max-width: 350px; } }
+    max-width: 350px; }
+  .quote {
+    font-size: 1rem; } }
 
 @media only screen and (max-width: 450px) {
   .headline .signature {

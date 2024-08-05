@@ -889,14 +889,16 @@ section {
 
 .testimonial {
   //! FOR LAYOUT PURPOSES ONLY -- DO NOT USE A BORDER IN PROD
-  // border: 0.2rem solid $orange;
-  border-radius: 0.5rem 0.5rem 0 0;
-  background: linear-gradient(178deg, $orange, rgba(246, 103, 51, 0) 10%);
+  border: 0.2rem solid $purple;
+  border-radius: 0.5rem;
+  // background: linear-gradient(178deg, $orange, rgba(246, 103, 51, 0) 10%);
 }
 
 blockquote {
   margin: 0;
   font-style: italic;
+  display: flex;
+  flex-direction: column;
 }
 
 .wide {
@@ -905,8 +907,11 @@ blockquote {
 }
 
 .quote {
+  font-size: 1.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
 }
 
 .quote-cite {
@@ -915,7 +920,7 @@ blockquote {
   border-top: 0.2rem solid $orange;
   padding: 0.25rem 0.25rem 0.25rem 1rem;
   margin-bottom: 0;
-  border-radius: 0 0 0.5rem 0.5rem;
+  // border-radius: 0 0 0.5rem 0.5rem;
 }
 
 /* FOOTER */
@@ -1101,6 +1106,10 @@ footer {
 
   .testimonial-section {
     margin: 0 1rem;
+  }
+
+  .quote {
+    font-size: 1.125rem;
   }
 }
 
@@ -1376,6 +1385,10 @@ footer {
 
   .logos {
     max-width: 350px;
+  }
+
+  .quote {
+    font-size: 1rem;
   }
 }
 
