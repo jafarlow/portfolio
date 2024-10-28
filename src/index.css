@@ -79,7 +79,7 @@ h1, h2, h3, h4 {
   font-weight: bold;
   font-family: "Ubuntu", sans-serif; }
 
-a, p, ul, figcaption, span {
+a, p, ul, figcaption, span, details {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   hyphens: auto; }
@@ -444,6 +444,13 @@ section {
     color: white; }
 
 /* PROJECT SECTION */
+summary {
+  font-weight: bold;
+  background-color: #d3d3d3;
+  color: #522D80;
+  padding: 1rem;
+  border: 1px #F66733 dotted; }
+
 #projects {
   margin-top: 6.5rem; }
 

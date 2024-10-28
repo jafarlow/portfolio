@@ -169,7 +169,7 @@ h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
 }
 
-a, p, ul, figcaption, span {
+a, p, ul, figcaption, span, details {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   hyphens: auto;
@@ -754,6 +754,15 @@ section {
 }
 
 /* PROJECT SECTION */
+
+summary {
+  //summary is the accordion subsection "header"
+  font-weight: bold;
+  background-color: $light-gray;
+  color: $purple;
+  padding: 1rem;
+  border: 1px $orange dotted;
+}
 
 #projects {
   margin-top: 6.5rem;
